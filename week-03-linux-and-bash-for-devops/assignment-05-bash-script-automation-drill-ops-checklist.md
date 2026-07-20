@@ -430,7 +430,10 @@ Functions organize the script into reusable sections, making it easier to read, 
 
 Paste your LinkedIn post URL here:
 
-`_https://www.linkedin.com/posts/angus-egbekobar_devops-linux-bash-ugcPost-7484330302337761281-IUfp/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg_________________________`
+
+https://www.linkedin.com/posts/angus-egbekobar_devops-linux-bash-ugcPost-7484330302337761281-IUfp/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg_
+
+
 
 ---
 

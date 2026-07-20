@@ -399,7 +399,7 @@ Cloud resources should be stopped or terminated when they are no longer needed t
 
 https://www.linkedin.com/posts/angus-egbekobar_devops-linux-nginx-ugcPost-7484633339916902400-IRmu/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg
 
-`__________________________`
+`Add your URL here`
 
 ---
 

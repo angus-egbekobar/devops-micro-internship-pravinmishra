@@ -98,7 +98,7 @@ Add your screenshot here.
 
 Paste your forked repository URL here:
 
-`__________________________`
+`Add your URL here`
 
 ---
 

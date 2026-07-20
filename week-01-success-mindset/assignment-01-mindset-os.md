@@ -128,7 +128,7 @@ Write as if a journalist is writing about you **3 to 7 years from now** (not 20 
 
 Include this line:
 
-> **P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). You can start your DevOps journey by joining this [Discord community](https://discord.pravinmishra.com/) ( https://discord.pravinmishra.com/ ).**
+> **P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). My graded progress is public: https://dmi.pravinmishra.com/s/YOUR-GITHUB-USERNAME.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-blog&utm_campaign=cohort3**
 
 ## Your Article
 
@@ -166,8 +166,12 @@ Looking back, the decision to begin with Linux, AWS, and DevOps was the foundati
 ### Public Link
 
 
+<<<<<<< HEAD
 https://www.linkedin.com/posts/angus-egbekobar_what-does-my-version-20-look-like-july-share-7484489136113115139-yHcf/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg
 `__________________________`
+=======
+`Add your URL here`
+>>>>>>> upstream/main
 
 ---
 
@@ -378,10 +382,10 @@ I will sleep as early as 8pm in oder to wake by 2am to do the DMI assignment
 ### LinkedIn Post
 
 Paste your LinkedIn post link here:
-https://www.linkedin.com/posts/angus-egbekobar_week-1-building-my-success-mindset-dmi-share-7484524528325480448-X3_a/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg
-`__________________________`
 
----
+https://www.linkedin.com/posts/angus-egbekobar_week-1-building-my-success-mindset-dmi-share-7484524528325480448-X3_a/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg
+
+
 
 ## 10. Proof of Work
 

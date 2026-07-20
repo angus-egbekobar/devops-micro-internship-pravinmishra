@@ -141,7 +141,7 @@ Add your screenshot here.
 
 https://www.linkedin.com/posts/angus-egbekobar_aws-ec2-reactjs-share-7484590325215309824-YufC/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg
 
-`__________________________`
+`Add your URL here`
 
 ---
 

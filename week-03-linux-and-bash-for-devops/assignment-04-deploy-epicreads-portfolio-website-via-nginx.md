@@ -119,10 +119,9 @@ Add your screenshot here.
 #### LinkedIn Post URL
 
 
-https://www.linkedin.com/posts/angus-egbekobar_devops-linux-ubuntu-share-7484128970553139200-IPJV/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg
-`__________________________`
 
----
+https://www.linkedin.com/posts/angus-egbekobar_devops-linux-ubuntu-share-7484128970553139200-IPJV/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg
+
 
 #### Screenshot — Published LinkedIn post showing the live website with your Full Name in the footer
 
