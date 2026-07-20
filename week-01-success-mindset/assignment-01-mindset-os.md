@@ -33,8 +33,8 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-Add your answer here...
 
+I believe that most people underestimate how much luck shapes success.Hard work, talent, and persistence are obviously important, but I think luck — being born in the right place, meeting the right mentor, stumbling into the right opportunity — plays a far bigger role than people are comfortable admitting. Many prefer the narrative that success is purely earned, but I see luck as the invisible multiplier that often makes the difference between two equally hardworking people.
 ---
 
 # Assignment 2. What are the top 3 objective truths you discovered through experimentation and results?
@@ -55,11 +55,9 @@ Write each truth in this format:
 
 ### Truth
 
-Add your answer here...
-
+ Sleep quality directly amplifies productivity
 ### Evidence from my life
-
-Add your answer here...
+I discovered that having a complete 8 hours sleep makes me more productive at work . i am always up and doing for that day 
 
 ---
 
@@ -67,11 +65,11 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
+Small, consistent habits beat big bursts of effort
 
 ### Evidence from my life
 
-Add your answer here...
+studying and writing codes in between a tight schedule even when is not convenient has practically become a part of me . waiting for the right time that i am less busy to do this, never happens . i just do it without thinking and waiting for the right time
 
 ---
 
@@ -79,11 +77,10 @@ Add your answer here...
 
 ### Truth
 
-Add your answer here...
-
+Environment shapes behavior more than willpower
 ### Evidence from my life
 
-Add your answer here...
+Removing distractions phone,tv and other forms of distraction to  another room, blocking sites.Productivity shot up when the environment was structured to reduce temptation.I personally take away every gadget to the other roomm in order to lock myself in what i am doing.
 
 ---
 
@@ -135,12 +132,41 @@ Include this line:
 
 ## Your Article
 
-Add your answer here...
+# From Banker to Cloud Architect: The Journey That Changed Everything
+
+Lagos, Nigeria | July 2026
+
+Three years ago, Angus Egbekobar made a decision that completely changed the direction of his career. After years of working in banking, he chose to step into technology, embracing uncertainty with determination and a commitment to continuous learning.
+
+Today, that decision has become one of the defining moments of his professional life.
+
+Angus established himself as a Cloud and DevOps Engineer with expertise in designing, automating, and managing secure, scalable infrastructure on Amazon Web Services (AWS). He earned the AWS Certified Solutions Architect – Associate certification early in his transition and continued building practical skills through consistent hands-on projects rather than relying on certifications alone.
+
+His GitHub portfolio evolved into a collection of real-world projects demonstrating Linux administration, Bash scripting, Docker containerization, Kubernetes deployments, Infrastructure as Code, CI/CD pipelines, monitoring, and cloud automation. Each repository documented not only the solution but also the lessons learned while solving real operational problems.
+
+His commitment to learning by building attracted the attention of employers. He joined a global technology company as a DevOps Engineer, where he automated deployment pipelines, improved infrastructure reliability, reduced deployment times, and collaborated closely with software development and operations teams. His work contributed to more resilient production environments and faster software delivery.
+
+Outside of work, Angus remained committed to education and community impact. Having previously served as a STEM instructor, he continued mentoring aspiring cloud engineers, sharing practical knowledge through technical blogs, LinkedIn articles, workshops, and open-source contributions. His content focused on making Linux, AWS, Bash scripting, Docker, Kubernetes, and DevOps concepts easier to understand for beginners.
+
+His technical writing gained recognition because it emphasized practical experience over theory. He published detailed deployment guides, troubleshooting walkthroughs, and project retrospectives that helped many learners overcome challenges similar to those he once faced.
+
+As his experience grew, Angus expanded his responsibilities from implementing cloud solutions to designing complete cloud architectures. He led migration projects, advised teams on AWS best practices, implemented cost optimization strategies, strengthened security through Identity and Access Management (IAM) policies and least-privilege principles, and contributed to highly available and fault-tolerant production systems.
+
+One characteristic remained constant throughout his journey: consistency. Rather than chasing shortcuts, he built projects, documented his work, learned from failures, and improved one skill at a time. Every deployment, every Bash script, every troubleshooting session, and every certification became another building block in his career.
+
+His story demonstrated that career transformation is achievable through discipline, practical experience, and continuous learning. The transition from banking to cloud engineering became more than a career change; it became evidence that persistence, curiosity, and deliberate practice can open entirely new opportunities.
+
+Looking back, the decision to begin with Linux, AWS, and DevOps was the foundation upon which an entirely new future was built.
+
+---
+
+**P.S. This post is a part of DevOps Micro Internship with Agentic AI Cohort-3 by [Pravin Mishra](https://www.linkedin.com/in/pravin-mishra-aws-trainer/). You can start your DevOps journey by joining this [Discord community](https://discord.pravinmishra.com/) (https://discord.pravinmishra.com/).**
+
 
 ### Public Link
 
-Paste your link here:
 
+https://www.linkedin.com/posts/angus-egbekobar_what-does-my-version-20-look-like-july-share-7484489136113115139-yHcf/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg
 `__________________________`
 
 ---
@@ -167,13 +193,13 @@ This is about self-awareness, not judgment.
 
 **Yes / No**
 
-If Yes:
+Yes:
 
 **What emotion did you feel?** (minimum 50–100 words)
 
 ## Answer
 
-Add your answer here...
+That feeling of guilt in that moment was heavy and unforgettable. It was  like my stomach dropped and my chest tightened all at once. I was  sitting there in the exam hall, the invigilator’s eyes fixed on me, and i  knew i’d been caught.It’s not just embarrassment; it’s the gnawing awareness that i'd let myself down. I still  replay the decision in my head till this very day .The whispers of my classmates fade, and all i  could  hear was the pounding of my own heartbeat. Shame washed  over me
 
 ---
 
@@ -199,16 +225,16 @@ Choose books that improve:
 
 ## Book List
 
-1. Add your answer here...
-2. Add your answer here...
-3. Add your answer here...
-4. Add your answer here...
-5. Add your answer here...
-6. Add your answer here...
-7. Add your answer here...
-8. Add your answer here...
-9. Add your answer here...
-10. Add your answer here...
+* 1..Atomic Habits — James Clear
+* 2.Deep Work — Cal Newport
+* 3.The 7 Habits of Highly Effective People — Stephen R. Covey
+* 4.How to Win Friends and Influence People — Dale Carnegie
+* 5.The Lean Startup — Eric Ries
+* 6.Thinking, Fast and Slow — Daniel Kahneman
+* 7.The Psychology of Money — Morgan Housel
+* 8.Can’t Hurt Me — David Goggins
+* 9.Leaders Eat Last — Simon Sinek
+* 10.Why We Sleep — Matthew Walker
 
 ---
 
@@ -237,14 +263,14 @@ List topics only. No need to share numbers.
 
 ## My Metrics
 
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
-* Add your answer here...
+* Steps / workouts - the number of walking steps i take everyday 
+* Learning hours per week 
+* How well i am am able to ariticulate and communicate my thoughts with others
+* The number of posts i make on linkedin and projects on github
+* The number of students i am able to teach and effect positively
+* The number of the act of kindness i am able to show to strangers every week
+* the number of sleep
+* Spending Tracker
 * Add your answer here...
 * Add your answer here...
 
@@ -272,7 +298,7 @@ Examples:
 
 Answer:
 
-Add your answer here...
+yes
 
 ---
 
@@ -290,7 +316,20 @@ Example:
 
 #### My Weekly Routine
 
-Add your answer here...
+Mon–Thu:  
+60 minutes deep work (coding, writing, or project work)  
+30 minutes reading non‑fiction (mindset/productivity/leadership)
+
+Fri:  
+Weekly networking or communication practice (reach out, write, or present)
+
+Sat:  
+Skill development session (e.g., online course, DMI session, or portfolio work)  
+Physical health focus — 1 hour exercise or outdoor activity
+
+Sun:  
+Weekly review (check goals, tasks, finances)  
+Brain dump refresh — clear out new worries/ideas
 
 ---
 
@@ -298,11 +337,11 @@ Add your answer here...
 
 #### When Will You Do DMI Work? (Days + Time)
 
-Add your answer here...
+EVery day + 2am -4am
 
 #### How Many Sessions Per Week?
 
-Add your answer here...
+A session every week
 
 ---
 
@@ -310,13 +349,15 @@ Add your answer here...
 
 Examples:
 
-* Phone rules
+* Phone rules  
 * Social media rules
 * Environment setup
 
 #### My Distraction Rules
 
-Add your answer here...
+*  Phones put on airplane mode  
+*  Room dark and quiet
+*  Locked inside a room to avoid any form of distraction
 
 ---
 
@@ -324,27 +365,27 @@ Add your answer here...
 
 ### Biggest insight I got about myself this week
 
-Add your answer here...
+I can actually achieve anything if i persist and show grit
 
 ### My biggest weakness/loop I noticed
 
-Add your answer here...
+social media
 
 ### One system I will implement from this week (exact habit + time)
 
-Add your answer here...
+I will sleep as early as 8pm in oder to wake by 2am to do the DMI assignment
 
 ### LinkedIn Post
 
 Paste your LinkedIn post link here:
-
+https://www.linkedin.com/posts/angus-egbekobar_week-1-building-my-success-mindset-dmi-share-7484524528325480448-X3_a/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg
 `__________________________`
 
 ---
 
 ## 10. Proof of Work
 
-- LinkedIn Post URL: **ADD LINK HERE**  
+- LinkedIn Post URL: **https://www.linkedin.com/posts/angus-egbekobar_week-1-building-my-success-mindset-dmi-share-7484524528325480448-X3_a/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg**  
 - Blog / Medium : **ADD LINK HERE**  
 
 ---
