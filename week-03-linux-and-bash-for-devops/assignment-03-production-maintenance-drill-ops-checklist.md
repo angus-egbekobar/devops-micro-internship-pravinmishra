@@ -20,13 +20,13 @@ Verify that the deployed React application is reachable from the browser and con
 
 #### Screenshot 1 — Browser showing the React app with your Full Name visible on the UI
 
-Add your screenshot here.
+
 ![alt text](image-12.png)
 ---
 
 #### Screenshot 2 — Output of `ip a`
 
-Add your screenshot here.
+
 ![alt text](image-13.png)
 ---
 
@@ -38,7 +38,7 @@ Add your screenshot here.
 
 #### Screenshot 4 — Output of `sudo ufw status`
 
-Add your screenshot here.
+
 ![alt text](image-15.png)
 ---
 
@@ -74,19 +74,19 @@ Verify that Nginx is properly installed, running, enabled at boot, and safely co
 
 #### Screenshot 1 — Output of `systemctl status nginx --no-pager`
 
-Add your screenshot here.
+
 ![alt text](image-16.png)
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t`
 
-Add your screenshot here.
+
 ![alt text](image-17.png)
 ---
 
 #### Screenshot 3 — Output of `sudo ss -lptn '( sport = :80 )'`
 
-Add your screenshot here.
+
 ![alt text](image-18.png)
 ---
 
@@ -130,19 +130,19 @@ Verify real traffic flow and analyze logs to understand system behavior and erro
 
 #### Screenshot 1 — Output of `sudo tail -n 30 /var/log/nginx/access.log`
 
-Add your screenshot here.
+
 ![alt text](image-19.png)
 ---
 
 #### Screenshot 2 — Output of `sudo tail -n 30 /var/log/nginx/error.log`
 
-Add your screenshot here.
+
 ![alt text](image-20.png)
 ---
 
 #### Screenshot 3 — Output of `sudo journalctl -u nginx --no-pager -n 50`
 
-Add your screenshot here.
+
 ![alt text](image-21.png)
 ---
 
@@ -181,25 +181,25 @@ Assess server capacity and detect potential performance or failure risks.
 
 #### Screenshot 1 — Output of `uptime`
 
-Add your screenshot here.
+
 ![alt text](image-22.png)
 ---
 
 #### Screenshot 2 — Output of `free -h`
 
-Add your screenshot here.
+
 ![alt text](image-23.png)
 ---
 
 #### Screenshot 3 — Output of `df -h`
 
-Add your screenshot here.
+
 ![alt text](image-25.png)
 ---
 
 #### Screenshot 4 — Output of `sudo du -sh /var/* | sort -h`
 
-Add your screenshot here.
+
 ![alt text](image-26.png)
 ---
 
@@ -229,19 +229,19 @@ Ensure the correct React build is deployed and Nginx is serving it properly.
 
 #### Screenshot 1 — Output of `ls -lah /var/www/html | head -n 20`
 
-Add your screenshot here.
+
 ![alt text](image-28.png)
 ---
 
 #### Screenshot 2 — Output of `grep -R "Deployed by" -n /var/www/html 2>/dev/null | head`
 
-Add your screenshot here.
+
 ![alt text](image-29.png)
 ---
 
 #### Screenshot 3 — Output of `grep -n "try_files" /etc/nginx/sites-available/default`
 
-Add your screenshot here.
+
 ![alt text](image-30.png)
 ---
 
@@ -265,19 +265,19 @@ Simulate a real-world Nginx misconfiguration and recover the service safely.
 
 #### Screenshot 1 — Output of `sudo nginx -t` showing the syntax error (broken config)
 
-Add your screenshot here.
+
 ![alt text](image-31.png)
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t` showing syntax ok (fixed config)
 
-Add your screenshot here.
+
 ![alt text](image-32.png)
 ---
 
 #### Screenshot 3 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
+
 ![alt text](image-33.png)
 ---
 
@@ -313,13 +313,13 @@ Simulate missing deployment content and recover the application safely.
 
 #### Screenshot 1 — Output of `curl -I http://<public-ip>` showing failure (non-200 response)
 
-Add your screenshot here.
+
 ![alt text](image-34.png)
 ---
 
 #### Screenshot 2 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
+
 ![alt text](image-35.png)
 ---
 
@@ -399,13 +399,13 @@ Cloud resources should be stopped or terminated when they are no longer needed t
 
 https://www.linkedin.com/posts/angus-egbekobar_devops-linux-nginx-ugcPost-7484633339916902400-IRmu/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg
 
-`Add your URL here`
+
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+
 ![alt text](image-72.png)
 ---
 

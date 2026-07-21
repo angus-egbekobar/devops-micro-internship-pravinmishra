@@ -166,12 +166,10 @@ Looking back, the decision to begin with Linux, AWS, and DevOps was the foundati
 ### Public Link
 
 
-<<<<<<< HEAD
+
 https://www.linkedin.com/posts/angus-egbekobar_what-does-my-version-20-look-like-july-share-7484489136113115139-yHcf/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg
 `__________________________`
-=======
-`Add your URL here`
->>>>>>> upstream/main
+
 
 ---
 
@@ -390,8 +388,8 @@ https://www.linkedin.com/posts/angus-egbekobar_week-1-building-my-success-mindse
 ## 10. Proof of Work
 
 - LinkedIn Post URL: **https://www.linkedin.com/posts/angus-egbekobar_week-1-building-my-success-mindset-dmi-share-7484524528325480448-X3_a/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg**  
-- Blog / Medium : **ADD LINK HERE**  
-
+- Blog / Medium : 
+https://medium.com/@angusegbekobar/how-i-built-my-mindset-os-before-writing-my-first-line-of-devops-code-91c3d3ba63a5
 ---
 
 ## 📌 About DMI & CloudAdvisory

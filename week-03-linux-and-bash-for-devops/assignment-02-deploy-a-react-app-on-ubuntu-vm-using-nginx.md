@@ -103,13 +103,13 @@ Apply Nginx configuration for React routing and confirm the service is active.
 
 #### Screenshot 7 — Output of `systemctl is-active nginx` showing `active`
 
-Add your screenshot here.
+
 ![alt text](image-6.png)
 ---
 
 #### Screenshot 8 — Output of `cat /etc/nginx/sites-available/default` showing the Nginx config
 
-Add your screenshot here.
+
 ![alt text](image-7.png)
 ---
 
@@ -123,13 +123,13 @@ Verify the React application is publicly accessible via the server's public IP.
 
 #### Screenshot 9 — Output of `curl ifconfig.me` showing the server's public IP address
 
-Add your screenshot here.
+
 ![alt text](image-10.png)
 ---
 
 #### Screenshot 10 — Browser showing the deployed React app at `http://<public-ip>` with your name and date visible
 
-Add your screenshot here.
+
 ![alt text](image-11.png)
 ---
 
@@ -141,7 +141,7 @@ Add your screenshot here.
 
 https://www.linkedin.com/posts/angus-egbekobar_aws-ec2-reactjs-share-7484590325215309824-YufC/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg
 
-`Add your URL here`
+
 
 ---
 

@@ -65,7 +65,7 @@ Confirm that your AWS account setup is complete by navigating to the Account sec
 
 #### Screenshot 1 — AWS Account page showing account name (email may be blurred)
 
-Add your screenshot here.
+
 ![alt text](image.png)
 ---
 
@@ -79,11 +79,11 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1 answers written in own words
-- [ ] AWS Free Tier account created successfully
-- [ ] Signed in to AWS Management Console
-- [ ] Screenshot of AWS Account page captured (full name visible, no sensitive data)
-- [ ] All required screenshots added to repository
+- [ ✓] Task 1 answers written in own words
+- [ ✓] AWS Free Tier account created successfully
+- [✓ ] Signed in to AWS Management Console
+- [✓ ] Screenshot of AWS Account page captured (full name visible, no sensitive data)
+- [ ✓] All required screenshots added to repository
 
 ---
 
