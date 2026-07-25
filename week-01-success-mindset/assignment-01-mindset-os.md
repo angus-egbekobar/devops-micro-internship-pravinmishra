@@ -273,8 +273,7 @@ List topics only. No need to share numbers.
 * The number of the act of kindness i am able to show to strangers every week
 * the number of sleep
 * Spending Tracker
-* Add your answer here...
-* Add your answer here...
+
 
 ---
 

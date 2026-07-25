@@ -25,7 +25,7 @@ Take a screenshot of your interaction showing:
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![Task 1 Screenshot](screenshots/task-1-chatgpt.png)
+![Task 1 Screenshot](screenshots/Screenshot 2026-07-24 112422)
 
 
 Replace `task-1-chatgpt.png` with your actual screenshot file name.
@@ -34,8 +34,8 @@ Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
 
+A protocol is a set of rules that tells computers how to send and receive information.A protocol is a set of rules that helps computers talk to each other nicely, just like children follow rules when playing a game.
 ---
 
 # 🌐 Task 2: Internet and Networking
@@ -59,7 +59,8 @@ Write a short explanation (**100–150 words**) that includes:
 
 ## Answer
 
-Add your answer here...
+
+When someone anywhere in the world visits **EpicReads**, their request is broken into small pieces called **packets** through **packet switching**. Each packet travels across the internet and is directed to the correct server in Finland using its unique **IP address**, just like a house address helps deliver mail. The **TCP/IP** protocol suite ensures that all packets are sent, received, and reassembled correctly, even if they take different routes. Once the packets reach the server, **HTTP** (Hypertext Transfer Protocol) or **HTTPS** (Hypertext Transfer Protocol Secure) is used to request and deliver the website. **HTTPS** encrypts the data exchanged between the user's browser and the server, protecting sensitive information such as login details and payment information. Together, these technologies make EpicReads accessible securely and reliably from anywhere in the world.
 
 ---
 
@@ -91,7 +92,7 @@ EpicReads bookstore has two application versions:
 
 Save your diagram image in the `screenshots` folder and update the file name below.
 
-![Application Architecture Diagram](screenshots/task-3-diagram.png)
+![Application Architecture Diagram](screenshots/Screenshot 2026-07-24 113104.png)
 
 
 Replace `task-3-diagram.png` with your actual diagram file name.
@@ -102,18 +103,18 @@ Replace `task-3-diagram.png` with your actual diagram file name.
 
 ### Frontend
 
-* Add your answer here...
-* Add your answer here...
+* HTML
+* CSS
 
 ### Backend
 
-* Add your answer here...
-* Add your answer here...
+* Node JS
+* EXPRESS JS
 
 ### Database
 
-* Add your answer here...
-* Add your answer here...
+* MYSQL
+* POSTGRESQL
 
 ---
 
@@ -142,7 +143,10 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-Add your answer here...
+
+DNS (Domain Name System) is like the internet's phonebook. It translates easy-to-remember domain names such as **epicreads.com** into IP addresses like **52.172.142.222**, allowing users to access websites without memorizing numbers.
+
+To connect **epicreads.com** to the IP address **52.172.142.222**, an **A Record (Address Record)** should be used. An A Record maps a domain name directly to an IPv4 address, ensuring that when users type **epicreads.com** into their browser, they are directed to the server hosting the EpicReads website.
 
 ---
 
@@ -178,7 +182,7 @@ ls
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![VS Code Setup Screenshot](screenshots/task-5-vscode.png)
+![VS Code Setup Screenshot](Screenshot 2026-07-24 114821.png)
 
 
 Replace `task-5-vscode.png` with your actual screenshot file name.
@@ -218,7 +222,7 @@ Add the following credit note at the end of your post:
 Paste your LinkedIn post URL here:
 
 ```text
-Add your URL here...
+https://www.linkedin.com/posts/angus-egbekobar_dmi-devops-micro-internship-with-agentic-share-7486376994222309377-aDws/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg
 ```
 
 ---
@@ -227,28 +231,61 @@ Add your URL here...
 
 Paste the full text of your LinkedIn post here:
 
-Add your post content here...
 
+Week 0: Building My Networking Foundations for DevOps 
+Every DevOps engineer starts with the fundamentals, and this week in the DevOps Micro Internship (DMI) with Agentic AI, Cohort 3, I strengthened my understanding of the technologies that make the internet work.
+Here's what I learned:
+🤖 ChatGPT as a Learning Assistant
+One of my first tasks was learning how to ask better technical questions. Using a well-structured prompt, I explored what a network protocol is and understood it through a simple real-life example.
+This reminded me that AI isn't just about getting answers. It's about learning how to ask better questions.
+🌍 Internet & Networking
+I learned how users anywhere in the world can access a website like EpicReads, even when it's hosted on a server in another country.
+Some key networking concepts I explored include:
+✅ Packet Switching
+✅ IP Addresses
+✅ TCP/IP
+✅ HTTP & HTTPS
+Understanding how data travels across networks gave me a much clearer picture of what happens every time we open a website.
+🏗️ Application Architecture
+I compared Two-Tier and Three-Tier application architectures and created diagrams to understand how applications are structured.
+I also identified common technologies used in each layer:
+• Frontend: HTML, CSS
+• Backend: Node.js, Express.js
+• Database: MySQL, PostgreSQL
+This helped me understand how each layer works together to deliver modern web applications.
+🌐 DNS
+I explored how the Domain Name System (DNS) translates human-friendly domain names into IP addresses.
+I also learned why an A Record is used to connect a domain name to an IPv4 address, allowing users to reach a website without memorizing numerical IP addresses.
+💻 Visual Studio Code Setup
+Finally, I verified my development environment by working inside Visual Studio Code, using the integrated terminal and confirming everything was ready for the hands-on DevOps assignments ahead.
+This week reminded me that before deploying applications or working with cloud infrastructure, it's essential to understand the networking and development fundamentals that everything else is built upon.
+Every new concept is another building block in my journey toward becoming a DevOps Engineer.
+P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI, Cohort 3, by Pravin Mishra. My graded progress is public: https://lnkd.in/eBe9ABzY · Start your DevOps journey: https://lnkd.in/e6YTEQuX
+hashtag#DMIByPravinMishra
+hashtag#DevOps hashtag#Networking hashtag#Internet hashtag#TCPIP hashtag#HTTP hashtag#HTTPS hashtag#DNS hashtag#VSCode hashtag#Git hashtag#Linux hashtag#CloudComputing hashtag#AWS hashtag#SoftwareEngineering hashtag#ContinuousLearning Mentors:
+@Pravin Mishra
+@Tanisha Borana
+@Joy Ukpabi
 ---
 
 # Reflection – Week 0
 
 ### What did you find easy?
 
-Add your answer here...
 
+tagging the co-mentors
 ---
 
 ### What was difficult?
 
-Add your answer here...
 
+Understanding  what a protocol is
 ---
 
 ### What will you improve next week?
 
-Add your answer here...
 
+starting on time
 ---
 
 ## 📌 About DMI & CloudAdvisory

@@ -54,7 +54,7 @@ Copy the provided starter HTML and CSS content into your local `index.html` and 
 
 #### Screenshot 4 — Your editor showing the contents of `index.html` and `style.css`
 
-Add your screenshot here.
+
 ![alt text](image-7.png)
 ![alt text](image-8.png)
 ---
@@ -163,7 +163,7 @@ Install and start Nginx on your EC2 instance, then copy `index.html` and `style.
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
+
 
 
 https://www.linkedin.com/posts/angus-egbekobar_git-github-versioncontrol-ugcPost-7485169086671400960-nSY5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg

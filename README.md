@@ -67,8 +67,8 @@ This is not a course. It is an internship-style program — real deployments, re
 
 **Your stack (uncomment each badge as you earn it):**
 
-<!-- Week 00 → Internet & Networking Basics -->
-<!-- [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) -->
+ Week 00 → Internet & Networking Basics
+[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)
 
 Week 01 → Success Mindset 
 [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) 
@@ -130,11 +130,11 @@ Week 03 → Linux & Bash for DevOps
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics ✅ Completed| ✅ Completed | ✅ Completed | ✅ Completed— | — |
-| 01 | Success Mindset |  ✅ Completed| ✅ Completed | ✅ Completed | — |
+| 00 | Internet & Networking Basics ✅  |✅ Completed;|✅ Solved |https://www.linkedin.com/posts/angus-egbekobar_dmi-devops-micro-internship-with-agentic-share-7486376994222309377-aDws/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg  |https://medium.com/@angusegbekobar/building-my-networking-foundations-for-devops-54bf3ad83bba
+| 01 | Success Mindset |  ✅ Completed| ✅ Solved | https://www.linkedin.com/posts/angus-egbekobar_week-1-building-my-success-mindset-dmi-share-7484524528325480448-X3_a/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg | https://medium.com/@angusegbekobar/how-i-built-my-mindset-os-before-writing-my-first-line-of-devops-code-91c3d3ba63a5 |
 | 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
-| 03 | Linux & Bash for DevOps | ✅ Completed; | ✅ Solved | ✅ Completed— | ✅ Completed— |
-| 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
+| 03 | Linux & Bash for DevOps | ✅ Completed; | ✅ Solved | https://www.linkedin.com/posts/angus-egbekobar_devops-linux-bash-ugcPost-7484330302337761281-IUfp/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg_ | https://medium.com/p/62a50dd33df7?postPublishedType=initial |
+| 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | https://www.linkedin.com/posts/angus-egbekobar_dmi-devops-micro-internship-with-agentic-share-7486445895388057600-kezx/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |

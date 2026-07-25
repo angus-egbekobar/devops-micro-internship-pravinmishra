@@ -147,7 +147,7 @@ https://www.linkedin.com/posts/angus-egbekobar_aws-ec2-reactjs-share-74845903252
 
 #### Screenshot — LinkedIn post showing the deployed application
 
-Add your screenshot here.
+
 ![alt text](image-71.png)
 ---
 
