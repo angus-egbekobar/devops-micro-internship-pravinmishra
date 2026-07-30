@@ -81,7 +81,10 @@ claude
 **Screenshots Required:**
 - Screenshot 1 — Terminal showing `claude --version` with the version number visible
 - Screenshot 2 — Claude Code authenticated and showing the terminal prompt 
+![alt text](image.png)
 
+
+![alt text](image-1.png)
 ---
 
 ### Task 2 — Fork and Clone the Starter Repository
@@ -105,7 +108,7 @@ code .
 
 **Screenshots Required:**
 - Screenshot 3 — VS Code with the project open, file tree visible showing `index.html`, `style.css`, `images/`
-
+![alt text](image-3.png)
 ---
 
 ### Task 3 — Observe the Agentic Loop
@@ -132,7 +135,9 @@ How many lines of CSS does this project have?
 **Screenshots Required:**
 - Screenshot 4 — Claude's response to the first question, showing it read the files (tool calls visible)
 - Screenshot 5 — Claude's response to the second question, showing it ran a command and reported the line count
+![alt text](image-4.png)
 
+![alt text](image-5.png)
 ---
 
 ## 8. Industry Insight
@@ -148,7 +153,7 @@ Complete all tasks in sequence.
 Your submission must include:
 - All 5 required screenshots
 - Your GitHub forked repository URL
-
+https://github.com/angus-egbekobar/Ultimate-Agentic-DevOps-with-Claude-Code
 ---
 
 ## 10. Solution Walkthrough
@@ -168,10 +173,10 @@ Not required for this assignment.
 ## 12. Completion Checklist
 
 Before submission, verify:
-- [ ] Claude Code CLI installed and `claude --version` works
-- [ ] Claude Code authenticated — opens without asking for login again
+- [✓ ] Claude Code CLI installed and `claude --version` works
+- [ ✓] Claude Code authenticated — opens without asking for login again
 - [ ] Starter repo forked and cloned
-- [ ] All 5 screenshots captured and added to your GitHub Repository file
+- [✓ ] All 5 screenshots captured and added to your GitHub Repository file
 - [ ] GitHub repo URL included
 
 ---
