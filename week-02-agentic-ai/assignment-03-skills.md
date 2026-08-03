@@ -96,7 +96,7 @@ Paste your forked repository URL here:
 
 Paste your forked repository URL here:
 
-https://lnkd.in/p/eUYUA54J
+https://lnkd.in/p/eQa-FSga
 ---
 
 # Completion Checklist
