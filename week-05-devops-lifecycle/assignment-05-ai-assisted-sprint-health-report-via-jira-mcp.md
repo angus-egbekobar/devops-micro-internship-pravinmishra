@@ -22,9 +22,15 @@ Generate an API token from your Atlassian account that the MCP server will use t
 
 Add your screenshot here.
 
+### Notes You Must Write (Very Important):
+
+Why does the MCP server need your site URL and account email in addition to the token?
+
+Add your answer here
+
 ---
 
-# Task 2 — Configure the Jira MCP Server
+# Task 2 — Create .mcp.json at the Project Root
 
 ## Goal
 
@@ -36,9 +42,15 @@ Create or update `.mcp.json` at your project root with a Jira MCP server block, 
 
 Add your screenshot here.
 
+### Notes You Must Write (Very Important):
+
+Compare this jira block to the github block from Week 2 Assignment 5. The GitHub server ran via npx (a Node.js package); this one runs via uvx (a Python package) — what stays exactly the same shape despite that difference, and why doesn't Claude Code care which language a given MCP server is written in?
+
+Add your answer here
+
 ---
 
-# Task 3 — Store Your Credentials Securely
+# Task 3 — Add Your Credentials to settings.local.json
 
 ## Goal
 
@@ -46,13 +58,19 @@ Add your Jira site URL, account email, and API token to `.claude/settings.local.
 
 ### Evidence
 
-#### Screenshot 3 — `settings.local.json` open in VS Code showing the credentials section, with the token value blurred or covered
+#### Screenshot 3 — `settings.local.json` open in VS Code showing the `env` section, with the actual token value blurred or covered
 
 Add your screenshot here.
 
+### Notes You Must Write (Very Important):
+
+Why must JIRA_API_TOKEN live in settings.local.json and never in .mcp.json?
+
+Add your answer here
+
 ---
 
-# Task 4 — Verify the Connection
+# Task 4 — Verify the Connection with /mcp
 
 ## Goal
 
@@ -60,13 +78,13 @@ Restart Claude Code and confirm the Jira MCP server shows as connected.
 
 ### Evidence
 
-#### Screenshot 4 — `/mcp` output showing the Jira server connected
+#### Screenshot 4 — `/mcp` output showing `jira: connected`
 
 Add your screenshot here.
 
 ---
 
-# Task 5 — Prove Live Data with a Real Query
+# Task 5 — Run a Live Query to Prove Real Board Data
 
 ## Goal
 
@@ -78,9 +96,15 @@ Ask Claude to list the issues in your current active sprint through the Jira MCP
 
 Add your screenshot here.
 
+### Notes You Must Write (Very Important):
+
+How did you confirm this was real board data and not something Claude guessed?
+
+Add your answer here
+
 ---
 
-# Task 6 — Build and Run the /sprint-health Skill
+# Task 6 — Build the /sprint-health Skill
 
 ## Goal
 
@@ -96,6 +120,16 @@ Add your screenshot here.
 
 Add your screenshot here.
 
+### Notes You Must Write (Very Important):
+
+1. Which Jira MCP tools does this skill's allowed-tools list include, and which mutating tools (create issue, update issue, transition issue, add comment) does it deliberately exclude?
+
+Add your answer here
+
+2. Why does a Scrum Master need this restriction more than almost any other role in this course?
+
+Add your answer here
+
 ---
 
 # Task 7 — Prove the Skill Never Mutates the Board
@@ -110,11 +144,9 @@ Manually update one ticket on your board in the browser (for example, move a sto
 
 Add your screenshot here.
 
----
+### Notes You Must Write (Very Important):
 
-### Notes
-
-Map this assignment to Gather → Analyze → Human Act → Verify. Which step did you perform yourself in the browser, and why must that step stay human rather than something the skill does automatically?
+Map this assignment to Gather → Analyze → Human Act → Verify from Week 3 Assignment 6. Which step did you perform manually in the browser, and why must that step stay human?
 
 Add your answer here
 
@@ -126,7 +158,7 @@ Complete all tasks in sequence.
 
 Your submission must include:
 - All 8 required screenshots
-- A note confirming `settings.local.json` is listed in your `.gitignore` and was not committed
+- All the required notes
 
 ---
 
