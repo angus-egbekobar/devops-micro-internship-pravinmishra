@@ -68,7 +68,7 @@ Break down S2 (Primary button color refresh) and S4 (Footer with version and dat
 
 #### Screenshot 5 — S2 showing all four Sub-tasks
 
-Add your screenshot here.
+
 ![alt text](image-11.png)
 ---
 
@@ -88,7 +88,7 @@ Apply the `frontend` label to S1, S2, S3, S5, and S6, and the `devops` label to 
 
 #### Screenshot 7 — Backlog or Story details showing labels applied to at least two visible Stories
 
-Add your screenshot here.
+
 ![alt text](image-13.png)
 
 ![alt text](image-14.png)

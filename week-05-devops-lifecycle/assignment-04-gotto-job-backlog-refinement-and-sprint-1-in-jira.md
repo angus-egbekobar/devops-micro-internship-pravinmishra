@@ -172,8 +172,8 @@ Implement one small UI-only Story from Sprint 1, commit it, deploy it live, and 
 
 #### Screenshot 10 — Jira board showing the Story moved to Done
 
-Add your screenshot here.
 
+![alt text](image-55.png)
 ---
 
 #### Screenshot 11 — Git commit output
@@ -184,8 +184,8 @@ Add your screenshot here.
 
 #### Screenshot 12 — Live URL in the browser showing the UI change, with the URL visible
 
-Add your screenshot here.
 
+![alt text](image-56.png)
 ---
 
 # Task 9 — Retro Notes (Scrum Pillar + Value)
@@ -198,8 +198,8 @@ Add a retro comment covering what went well, what to improve, one Scrum pillar o
 
 #### Screenshot 13 — Jira retro comment visible
 
-Add your screenshot here.
 
+![alt text](image-57.png)
 ---
 
 # Task 10 — LinkedIn Post (Mandatory)
@@ -214,14 +214,14 @@ Publish a LinkedIn post about what you delivered, including your live URL, three
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
 
+https://lnkd.in/p/e6mjDqqP
 ---
 
 #### Screenshot 14 — Published LinkedIn post
 
-Add your screenshot here.
 
+![alt text](image-58.png)
 ---
 
 # Submission Instructions
@@ -234,18 +234,18 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Team Mode or Solo Mode selected and all four roles documented (Screenshot 1 & Notes)
-- [ ] Task 2: Team-managed Scrum project created with the required name (Screenshot 2)
-- [ ] Task 3: UI improvement Epic created (Screenshot 3)
-- [ ] Task 4: 6–8 Stories added under the Epic and ranked by value (Screenshots 4 & 5)
-- [ ] Task 5: Story Points set (1, 2, or 3) with reasoning recorded (Screenshot 6 & Notes)
-- [ ] Task 6: Sprint 1 created with Sprint Goal, 3–4 Stories, and Sub-tasks (Screenshots 7 & 8)
-- [ ] Task 7: Burndown Chart opened (Screenshot 9)
-- [ ] Task 8: One UI-only increment implemented, committed, deployed, and verified (Screenshots 10–12)
-- [ ] Task 9: Retro comment with one Scrum pillar and one Scrum value (Screenshot 13)
-- [ ] Task 10: Mandatory LinkedIn post published with the live URL, backlog refinement, Sprint planning, one shipped increment, proof, and Screenshot 14
-- [ ] Full Name visible in required screenshots
-- [ ] No sensitive data exposed
+- [✓ ] Task 1: Team Mode or Solo Mode selected and all four roles documented (Screenshot 1 & Notes)
+- [ ✓] Task 2: Team-managed Scrum project created with the required name (Screenshot 2)
+- [ ✓] Task 3: UI improvement Epic created (Screenshot 3)
+- [✓ ] Task 4: 6–8 Stories added under the Epic and ranked by value (Screenshots 4 & 5)
+- [✓ ] Task 5: Story Points set (1, 2, or 3) with reasoning recorded (Screenshot 6 & Notes)
+- [ ✓] Task 6: Sprint 1 created with Sprint Goal, 3–4 Stories, and Sub-tasks (Screenshots 7 & 8)
+- [ ✓] Task 7: Burndown Chart opened (Screenshot 9)
+- [✓ ] Task 8: One UI-only increment implemented, committed, deployed, and verified (Screenshots 10–12)
+- [ ✓] Task 9: Retro comment with one Scrum pillar and one Scrum value (Screenshot 13)
+- [ ✓] Task 10: Mandatory LinkedIn post published with the live URL, backlog refinement, Sprint planning, one shipped increment, proof, and Screenshot 14
+- ✓[ ] Full Name visible in required screenshots
+- [ ]✓ No sensitive data exposed
 
 ---
 
