@@ -24,14 +24,14 @@ Confirm your AWS CLI is authenticated and can see the S3 bucket, EC2 instance(s)
 
 #### Screenshot 1 — Output of `aws s3 ls`, the EC2 instance table, and the RDS instance table (blur the Account ID if visible)
 
-Add your screenshot here.
 
+![alt text](image-71.png)
 ---
 
 #### Screenshot 2 — Output of `pwd` and `find . -maxdepth 4 -type d | sort`
 
-Add your screenshot here.
 
+![alt text](image-72.png)
 ---
 
 ### Notes You Must Write (Very Important)
@@ -40,10 +40,15 @@ Add your screenshot here.
 
 Write your answer here.
 
+./.claude
+
+./.claude/skills
+
 **2. Why must you confirm your resources exist before writing an audit script against them?**
 
 Write your answer here.
 
+pwdBecause if the resources don’t actually exist, the audit script will fail or produce inaccurate results. Confirming their existence ensures that the script runs against valid targets, avoids wasted effort, and prevents errors or misleading output in the audit process.
 ---
 
 # Task 2 — Define Safety Rules in CLAUDE.md
