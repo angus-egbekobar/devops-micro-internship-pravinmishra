@@ -32,7 +32,7 @@ Create `epicbook-vpc` (10.0.0.0/16) with a public subnet (10.0.1.0/24) and a pri
 
 #### Screenshot 3 — Route table showing 0.0.0.0/0 → IGW and association with the public subnet
 
-Add your screenshot here.
+
 ![alt text](image-12.png)
 
 ![alt text](image-13.png)
@@ -68,7 +68,7 @@ Launch an Ubuntu 20.04 instance in the public subnet with `epicbook-ec2-sg` atta
 
 #### Screenshot 6 — EC2 instance summary showing the public IPv4 address, subnet, and security group
 
-Add your screenshot here.
+
 ![alt text](image-16.png)
 
 ![alt text](image-17.png)
