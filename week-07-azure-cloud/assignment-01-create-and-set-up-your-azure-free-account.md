@@ -30,14 +30,16 @@ Sign in to the Azure Portal, locate key services (Resource Groups, Virtual Machi
 
 #### Screenshot 1 — Azure Portal homepage after successful login
 
-Add your screenshot here.
 
+![alt text](image.png)
 ---
 
 #### Screenshot 2 — "Subscriptions" section showing the "Free Trial" subscription
 
-Add your screenshot here.
 
+![alt text](image-1.png)
+
+![alt text](image-2.png)
 ---
 
 ### Notes
@@ -46,6 +48,7 @@ Write a three-to-four-line paragraph explaining which Azure services you plan to
 
 Write your answer here.
 
+I plan to start with Virtual Machines, Virtual Networks (VNets), and Network Security Groups, since these map directly to the AWS EC2/VPC/Security Group concepts I already worked with in my Book Review App deployment, and will help me build a working comparison between the two platforms. From there, I want to explore Azure Kubernetes Service (AKS), given my existing hands-on experience with Kubernetes, to see how container orchestration and cluster management differ from a self-managed setup. I'll also look into Azure Load Balancer / Application Gateway and Azure Database for MySQL, since they're the direct equivalents of the ALB and RDS components in my current architecture, and understanding both platforms' approaches to load balancing and managed databases is valuable for a DevOps/Cloud Engineer role that may work across either ecosystem.
 ---
 
 # Submission Instructions
@@ -57,12 +60,12 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] Azure Free Account created with identity, phone, and payment verification completed
-- [ ] Microsoft Agreement and Offer Terms accepted
-- [ ] Azure Portal accessed successfully (Screenshot 1)
-- [ ] Free Trial subscription confirmed (Screenshot 2)
-- [ ] Reflection paragraph written (Notes)
-- [ ] No sensitive information exposed
+- [ ✓] Azure Free Account created with identity, phone, and payment verification completed
+- [ ✓] Microsoft Agreement and Offer Terms accepted
+- [ ✓] Azure Portal accessed successfully (Screenshot 1)
+- [ ✓] Free Trial subscription confirmed (Screenshot 2)
+- [ ✓] Reflection paragraph written (Notes)
+- [ ✓] No sensitive information exposed
 
 ---
 
