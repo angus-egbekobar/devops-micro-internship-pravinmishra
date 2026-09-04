@@ -137,7 +137,7 @@ Week 03 → Linux & Bash for DevOps
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | https://www.linkedin.com/posts/angus-egbekobar_dmi-devops-micro-internship-with-agentic-share-7486445895388057600-kezx/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg | https://medium.com/@angusegbekobar/mastering-professional-git-github-workflows-my-week-4-journey-in-devops-0bc860ddc561 |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ In Progress &nbsp;| ⏳ Pending | https://www.linkedin.com/posts/angus-egbekobar_aws-awscloud-devops-activity-7497868222482792451-N13a?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg | https://medium.com/@angusegbekobar/deploying-a-production-style-three-tier-book-review-application-on-aws-560efa6d289b |
-| 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
+| 07 | Azure Cloud | pending | ⏳ Pending | https://www.linkedin.com/posts/angus-egbekobar_devops-azure-microsoftazure-activity-7501556389203566592-GzaD?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg | https://medium.com/@angusegbekobar/deploying-a-three-tier-book-review-application-on-azure-from-source-code-to-production-style-d0e0ce093ca1|
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |

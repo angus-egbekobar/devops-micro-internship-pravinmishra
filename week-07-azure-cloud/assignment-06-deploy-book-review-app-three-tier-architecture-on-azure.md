@@ -246,7 +246,7 @@ http://4.168.239.127/book/1
 
 Summarize what worked, issues encountered and how they were fixed, and the availability/security/secrets/monitoring/backup choices made.
 
-Write your answer here.
+
 # What worked
 The overall three-tier architecture came together successfully: a public-facing Web VM running Nginx (reverse proxy + Next.js frontend) → an internal Load Balancer → a private App VM (Node/Express backend, PM2-managed) → Azure Database for MySQL Flexible Server (Private access/VNet integration). End-to-end read (books listing) and write (user registration) operations were verified working through the full chain, and the app auto-restarts on VM reboot via PM2's systemd integration (pm2 startup + pm2 save).
 

@@ -40,7 +40,7 @@ Create an Ubuntu 20.04 LTS VM (size B1s) with a Network Security Group allowing 
 
 #### Screenshot 3 — Network Security Group inbound rules showing ports 22 and 80 allowed
 
-Add your screenshot here.
+
 
 ---
 

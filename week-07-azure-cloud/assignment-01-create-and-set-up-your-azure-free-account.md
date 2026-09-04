@@ -46,7 +46,7 @@ Confirm successful Azure Portal access and Locate the required services and subs
 
 Write a three-to-four-line paragraph explaining which Azure services you plan to explore first and why.
 
-Write your answer here.
+
 
 I plan to start with Virtual Machines, Virtual Networks (VNets), and Network Security Groups, since these map directly to the AWS EC2/VPC/Security Group concepts I already worked with in my Book Review App deployment, and will help me build a working comparison between the two platforms. From there, I want to explore Azure Kubernetes Service (AKS), given my existing hands-on experience with Kubernetes, to see how container orchestration and cluster management differ from a self-managed setup. I'll also look into Azure Load Balancer / Application Gateway and Azure Database for MySQL, since they're the direct equivalents of the ALB and RDS components in my current architecture, and understanding both platforms' approaches to load balancing and managed databases is valuable for a DevOps/Cloud Engineer role that may work across either ecosystem.
 ---
