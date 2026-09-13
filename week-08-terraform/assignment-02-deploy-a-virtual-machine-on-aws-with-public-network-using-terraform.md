@@ -24,8 +24,8 @@ Prepare your local environment for Terraform deployment by installing Terraform,
 
 Ensure that your full name is visible and that no AWS credentials, account IDs, or other sensitive information are exposed.
 
-Add your screenshot here.
 
+![alt text](image-17.png)
 ---
 
 # Task 1 — Create a New Terraform Project and Define the Infrastructure
@@ -54,16 +54,16 @@ The configuration must include:
 
 #### Screenshot 2 — VS Code showing the AWS provider configuration and VPC configuration in `main.tf`
 
-Add your screenshot here.
 
+![alt text](image-18.png)
 ---
 
 #### Screenshot 3 — VS Code showing the EC2 instance configuration and public IP `output` block in `main.tf`
 
 Ensure that no AWS credentials, private keys, account IDs, or other sensitive information are visible.
 
-Add your screenshot here.
 
+![alt text](image-19.png)
 ---
 
 # Task 2 — Initialize Terraform
@@ -76,8 +76,8 @@ Initialize the Terraform working directory and download the required provider co
 
 #### Screenshot 4 — Terminal showing the successful `terraform init` output
 
-Add your screenshot here.
 
+![alt text](image-20.png)
 ---
 
 # Task 3 — Plan and Apply the Configuration
@@ -90,27 +90,30 @@ Review the Terraform execution plan, provision the AWS resources, and record the
 
 #### Screenshot 5 — Terraform plan summary showing the proposed resources
 
-Add your screenshot here.
 
+![alt text](image-21.png)
+
+![alt text](image-22.png)
 ---
 
 #### Screenshot 6 — Terraform apply output showing successful completion
 
-Add your screenshot here.
 
+![alt text](image-23.png)
 ---
 
 #### Screenshot 7 — Terraform output showing the public IP address of the EC2 instance
 
-Add your screenshot here.
 
+![alt text](image-24.png)
 ---
 
 ### EC2 Public IP Address
 
 Record the public IP address displayed by `terraform output`.
 
-**EC2 Public IP Address:** `Add the public IP address here`
+**EC2 Public IP Address:** 
+13.61.196.213
 
 ---
 
@@ -132,14 +135,14 @@ Confirm that:
 
 #### Screenshot 8 — AWS CLI output showing the EC2 instance ID, `running` state, and public IP address
 
-Add your screenshot here.
 
+![alt text](image-25.png)
 ---
 
 #### Screenshot 9 — Browser showing the Nginx page successfully loaded using the EC2 instance public IP
 
-Add your screenshot here.
 
+![alt text](image-26.png)
 ---
 
 # Task 5 — Destroy the Resources
@@ -152,8 +155,8 @@ Remove all AWS resources created by Terraform after completing the deployment an
 
 #### Screenshot 10 — Terminal showing successful `terraform destroy` completion
 
-Add your screenshot here.
 
+![alt text](image-27.png)
 ---
 
 # Submission Instructions

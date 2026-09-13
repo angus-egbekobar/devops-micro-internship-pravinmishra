@@ -6,8 +6,8 @@ Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
 ## Student Details
 
-**Full Name:** Add your full name here  
-**Cloud Platform:** AWS or Azure  
+**Full Name:** Angus Egbekobar
+**Cloud Platform:** AWS
 **GitHub Repository URL:** Add your repository URL here  
 **Public Application URL / Load-Balancer DNS:** Add the public URL or DNS here
 
@@ -31,40 +31,40 @@ Prepare the Book Review App project and configure the provided Claude Code Agent
 
 Add a screenshot of the project `CLAUDE.md` showing the three-tier architecture, security boundaries, Terraform requirements, and human-approval rules.
 
-Add your screenshot here.
 
+![alt text](image-89.png)
 ---
 
 ### Screenshot 2 — Terraform Engineer Subagent
 
 Add a screenshot showing the Terraform Engineer subagent configuration.
 
-Add your screenshot here.
 
+![alt text](image-90.png)
 ---
 
 ### Screenshot 3 — Architecture and Security Reviewer Subagent
 
 Add a screenshot showing the Architecture and Security Reviewer subagent configuration.
 
-Add your screenshot here.
 
+![alt text](image-91.png)
 ---
 
 ### Screenshot 4 — Terraform MCP Connection
 
 Add a screenshot showing Terraform MCP connected and available.
 
-Add your screenshot here.
 
+![alt text](image-85.png)
 ---
 
 ### Screenshot 5 — Validation Hooks
 
 Add a screenshot showing the configured Claude Code validation hooks.
 
-Add your screenshot here.
 
+![alt text](image-92.png)
 ---
 
 # Task 1 — Design the Three-Tier Architecture
@@ -91,7 +91,7 @@ The diagram must show:
 ## Architecture Diagram
 
 Add the completed architecture diagram here.
-
+![alt text](image-87.png)
 ---
 
 # Task 2 — Build the Terraform Networking and Security Layers
@@ -106,24 +106,24 @@ Create the modular Terraform project and implement the network and security laye
 
 Add a screenshot showing the modular Terraform project structure.
 
-Add your screenshot here.
 
+![alt text](image-94.png)
 ---
 
 ### Screenshot 7 — Six-Subnet Architecture
 
 Add a screenshot showing the six-subnet architecture across two availability locations.
 
-Add your screenshot here.
 
+![alt text](image-95.png)
 ---
 
 ### Screenshot 8 — Public and Private Tier Separation
 
 Add a screenshot showing the public and private tier separation, including routing and security boundaries.
 
-Add your screenshot here.
 
+![alt text](image-96.png)
 ---
 
 # Task 3 — Build the Load-Balancing and Compute Layers
