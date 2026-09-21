@@ -1,6 +1,6 @@
 # Assignment 1 — AWS Free Tier Account Setup (EpicReads Cloud Onboarding)
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
@@ -20,28 +20,19 @@ Demonstrate understanding of AWS basics and Free Tier usage by answering the fol
 
 #### Question 1 — What is an AWS account, and why do you need it at this stage?
 
-An AWS account is basically my personal gateway into Amazon Web Services. I see it like creating a bank account, but instead of storing money, it gives me access to cloud resources — servers, storage, databases, and more.
-At this stage, i need it because without an AWS account, i can’t launch or manage an EC2 instance (your virtual server). It’s the foundation that lets me  log in, configure services, and track usage.
+Write your answer here.
 
 ---
 
 #### Question 2 — What is AWS Free Tier, and how long does it last?
 
-
-The AWS Free Tier is Amazon’s way of letting new users try out cloud services without paying right away. It’s like a test drive for the cloud.
-It lasts 12 months from the day you create your AWS account. During that period, you get a set amount of usage for free each month. After the 12 months, you’ll start paying for whatever you use beyond the free limits.
+Write your answer here.
 
 ---
 
 #### Question 3 — Name three AWS Free Tier services and their free usage limits.
 
-Amazon EC2 (Elastic Compute Cloud) → 750 hours per month of a t2.micro or t3.micro instance (enough to run one small server continuously).
-
-Amazon S3 (Simple Storage Service) → 5 GB of standard storage, 20,000 GET requests, and 2,000 PUT requests per month.
-
-Amazon RDS (Relational Database Service) → 750 hours per month of a small database instance, plus 20 GB of storage.
-
-
+Write your answer here.
 
 ---
 
@@ -65,8 +56,22 @@ Confirm that your AWS account setup is complete by navigating to the Account sec
 
 #### Screenshot 1 — AWS Account page showing account name (email may be blurred)
 
+Add your screenshot here.
 
-![alt text](image.png)
+---
+
+# Task 4 — Share Your AWS Cloud Onboarding Progress
+
+## Goal
+
+Share your AWS cloud onboarding progress on WhatsApp Status and provide evidence of the published status.
+
+### Evidence
+
+### Screenshot 2 — Published WhatsApp Status showing your AWS onboarding message and leaderboard progress link visible
+
+Add your screenshot here.
+
 ---
 
 # Submission Instructions
@@ -74,16 +79,19 @@ Confirm that your AWS account setup is complete by navigating to the Account sec
 - Add all required screenshots in your GitHub repository submission
 - Full name must be visible in required screenshots
 - Do not expose sensitive information (keys, passwords, account IDs)
+- Share your AWS onboarding progress on WhatsApp Status (Task 4)
 
 ---
 
 # Completion Checklist
 
-- [ ✓] Task 1 answers written in own words
-- [ ✓] AWS Free Tier account created successfully
-- [✓ ] Signed in to AWS Management Console
-- [✓ ] Screenshot of AWS Account page captured (full name visible, no sensitive data)
-- [ ✓] All required screenshots added to repository
+- [ ] Task 1 answers written in own words
+- [ ] AWS Free Tier account created successfully
+- [ ] Signed in to AWS Management Console
+- [ ] Screenshot 1 of AWS Account page captured (full name visible, no sensitive data)
+- [ ] Task 4: AWS onboarding progress shared on WhatsApp Status
+- [ ] Screenshot 2 of published WhatsApp Status captured with leaderboard progress link visible
+- [ ] All required screenshots added to repository
 
 ---
 
@@ -107,4 +115,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*

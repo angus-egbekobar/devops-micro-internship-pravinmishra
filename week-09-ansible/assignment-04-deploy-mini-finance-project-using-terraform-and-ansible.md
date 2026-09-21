@@ -1,6 +1,6 @@
 # Assignment 04 — Deploy Mini Finance on Azure Using Terraform and Ansible
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
@@ -581,9 +581,6 @@ Confirm that the following files are included in your assignment folder:
 - Answer all assignment questions clearly in your own words.
 - Add your LinkedIn post URL.
 - Do not expose SSH private keys, passwords, Azure credentials, subscription IDs, Terraform state contents, or other sensitive information.
-- Submit only one Google Doc link.
-- Ensure that anyone with the link can view the document.
-- Test the Google Doc link in an incognito or private browser window before submitting.
 
 ---
 
@@ -619,7 +616,6 @@ Confirm that the following files are included in your assignment folder:
 - [ ] LinkedIn post published with Anyone visibility
 - [ ] LinkedIn post URL added
 - [ ] No sensitive information is exposed
-- [ ] Google Doc is accessible
 
 ---
 
@@ -643,4 +639,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
