@@ -37,8 +37,8 @@ Add a screenshot of Azure Repos showing:
 * `main` branch
 * Project files
 
-Add your screenshot here.
 
+![alt text](image-13.png)
 ---
 
 # Task 2 — Provision and Configure the Target VM
@@ -81,7 +81,17 @@ Add a screenshot of the Azure Pipeline YAML open in the editor showing:
 * Publish stage
 * Deploy stage
 
-Add your screenshot here.
+
+
+![alt text](image-16.png)
+
+![alt text](image-17.png)
+
+![alt text](image-18.png)
+
+![alt text](image-19.png)
+
+![alt text](image-20.png)
 
 > Do not expose passwords, private keys, tokens, or cloud credentials.
 
@@ -104,8 +114,10 @@ Add a screenshot of one Azure DevOps pipeline run showing all four stages succee
 * Publish
 * Deploy
 
-Add your screenshot here.
 
+![alt text](image-15.png)
+
+![alt text](image-21.png)
 ---
 
 # Task 6 — Verify the Deployment on the VM
@@ -122,8 +134,8 @@ Add a screenshot of the pipeline SSH verification log or VM terminal showing the
 
 `/var/www/html`
 
-Add your screenshot here.
 
+![alt text](image-22.png)
 ---
 
 # Task 7 — Verify the Website and Automatic Trigger
@@ -143,11 +155,11 @@ Add a browser screenshot showing:
 * Your Full Name
 * Deployment date
 
-Add your screenshot here.
 
+![alt text](image-23.png)
 ## Final Application URL
 
-`http://<vm-public-ip>`
+`http://34.242.189.155`
 
 Replace the placeholder and paste your final application URL below:
 
@@ -159,8 +171,14 @@ Replace the placeholder and paste your final application URL below:
 
 Write a short explanation of the CI/CD workflow you created.
 
-[Write your summary here.]
 
+In this assignment I built a multi-stage CI/CD pipeline using Azure DevOps that automatically builds, tests, and deploys a React application to an AWS EC2 instance whenever a commit is pushed to the main branch.
+
+The workflow begins with Terraform provisioning a fresh Ubuntu EC2 instance in AWS eu-west-1 with the correct security group rules, SSH key pair, and public IP address. Ansible then configures the instance by installing Nginx, enabling SPA routing for React, setting the correct permissions on /var/www/html, and configuring password-based SSH authentication for the Azure DevOps service connection. A second Ansible playbook installs Node.js and npm on the self-hosted Azure Pipelines agent so it can build the React application.
+
+The Azure DevOps pipeline is organized into four sequential stages. The Build stage checks out the React source code, installs dependencies using npm ci, compiles the application with npm run build, verifies that build/index.html was created, and publishes the output as a reusable artifact called reactBuild. The Test stage downloads the source code independently, installs dependencies again, and runs the application's unit tests with CI=true npm test --watchAll=false. If any test fails the pipeline stops and neither Publish nor Deploy runs. The Publish stage downloads the reactBuild artifact, verifies that index.html and the static folder are present, and republishes it as deploymentPackage — a clean, verified package ready for deployment. The Deploy stage downloads deploymentPackage and uses the CopyFilesOverSSH@0 task to transfer the production files to /var/www/html on the EC2 instance via the ubuntu-nginx-ssh service connection. A final SSH@0 verification step confirms that index.html exists, Nginx is active, and the server returns HTTP 200.
+
+The result is a fully automated deployment pipeline where every commit to main triggers a build, runs tests, verifies the artifact, and deploys the updated React application to the live server — with no manual steps required.
 ---
 
 # LinkedIn Requirement
@@ -174,11 +192,11 @@ Add a screenshot of your LinkedIn post showing:
 * Post text
 * At least one image or link
 
-Add your screenshot here.
+![alt text](image-24.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+https://lnkd.in/p/eaX85gVF
 
 > Do not expose VM passwords, tokens, private keys, cloud credentials, or other sensitive information.
 
