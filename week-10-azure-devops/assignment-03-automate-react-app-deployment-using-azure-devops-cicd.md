@@ -38,7 +38,7 @@ Add a screenshot of Azure Repos showing:
 * Project files
 
 
-![alt text](image-13.png)
+![alt text](screenshots/image-13.png)
 ---
 
 # Task 2 — Provision and Configure the Target VM
@@ -83,15 +83,15 @@ Add a screenshot of the Azure Pipeline YAML open in the editor showing:
 
 
 
-![alt text](image-16.png)
+![alt text](screenshots/image-16.png)
 
-![alt text](image-17.png)
+![alt text](screenshots/image-17.png)
 
-![alt text](image-18.png)
+![alt text](screenshots/image-18.png)
 
-![alt text](image-19.png)
+![alt text](screenshots/image-19.png)
 
-![alt text](image-20.png)
+![alt text](screenshots/image-20.png)
 
 > Do not expose passwords, private keys, tokens, or cloud credentials.
 
@@ -115,9 +115,9 @@ Add a screenshot of one Azure DevOps pipeline run showing all four stages succee
 * Deploy
 
 
-![alt text](image-15.png)
+![alt text](screenshots/image-15.png)
 
-![alt text](image-21.png)
+![alt text](screenshots/image-21.png)
 ---
 
 # Task 6 — Verify the Deployment on the VM
@@ -135,7 +135,7 @@ Add a screenshot of the pipeline SSH verification log or VM terminal showing the
 `/var/www/html`
 
 
-![alt text](image-22.png)
+![alt text](screenshots/image-22.png)
 ---
 
 # Task 7 — Verify the Website and Automatic Trigger
@@ -156,7 +156,7 @@ Add a browser screenshot showing:
 * Deployment date
 
 
-![alt text](image-23.png)
+![alt text](screenshots/image-23.png)
 ## Final Application URL
 
 `http://34.242.189.155`
@@ -192,7 +192,7 @@ Add a screenshot of your LinkedIn post showing:
 * Post text
 * At least one image or link
 
-![alt text](image-24.png)
+![alt text](screenshots/image-24.png)
 
 ## LinkedIn Post URL
 

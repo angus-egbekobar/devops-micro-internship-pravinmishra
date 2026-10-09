@@ -59,7 +59,7 @@ Add a screenshot from AWS or Azure showing:
 * Public IP address
 
 
-![alt text](image.png)
+![alt text](screenshots/image.png)
 ---
 
 ### Screenshot 2 — Ubuntu, Architecture, and HTTPS Verification
@@ -73,7 +73,7 @@ Add an SSH terminal screenshot showing the output of:
 The screenshot must confirm a supported Ubuntu version, `x86_64` architecture, and a successful HTTP response from Azure DevOps.
 
 
-![alt text](image-1.png)
+![alt text](screenshots/image-1.png)
 ---
 
 # Task 4 — Install and Configure the Azure Pipelines Agent
@@ -94,7 +94,7 @@ Add a terminal screenshot showing:
 * `sudo ./svc.sh status` reporting that the service is running
 
 
-![alt text](image-2.png)
+![alt text](screenshots/image-2.png)
 
 > Ensure that the PAT is not visible.
 
@@ -118,7 +118,7 @@ Add a screenshot of the Azure DevOps Agent Pool **Agents** page showing:
 * Agent enabled and available
 
 
-![alt text](image-3.png)
+![alt text](screenshots/image-3.png)
 ---
 
 # Task 6 — Create and Run a Test Pipeline
@@ -140,7 +140,7 @@ Add a screenshot of `azure-pipelines.yml` open in the Azure Repos editor showing
 * Linux verification commands
 
 
-![alt text](image-4.png)
+![alt text](screenshots/image-4.png)
 ---
 
 ### Screenshot 6 — Successful Test Pipeline
@@ -158,7 +158,7 @@ Add a screenshot of the successful Azure DevOps pipeline run showing:
 * Output from `pwd`
 
 
-![alt text](image-5.png)
+![alt text](screenshots/image-5.png)
 ---
 
 ## Completed azure-pipelines.yml
@@ -211,7 +211,7 @@ Add a screenshot of your LinkedIn post showing:
 * A screenshot of the successful pipeline run with no secrets visible
 
 
-![alt text](image-6.png)
+![alt text](screenshots/image-6.png)
 **LinkedIn Post URL:** 
 https://lnkd.in/p/eYEdJdG4
 ---

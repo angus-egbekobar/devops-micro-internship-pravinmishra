@@ -70,7 +70,7 @@ Add a screenshot of the Infrastructure Pipeline run showing:
 * `backend_private_ip`
 * `mysql_fqdn`
 
-![alt text](image-25.png)
+![alt text](screenshots/image-25.png)
 
 > Do not expose the MySQL password, Client Secret, Terraform state, SSH private key, or another sensitive value.
 
@@ -87,10 +87,10 @@ Add a screenshot of the Azure Portal Resource Group overview showing:
 * Related EpicBook resources
 
 
-![alt text](image-26.png)
-![alt text](image-27.png)
-![alt text](image-28.png)
-![alt text](image-29.png)
+![alt text](screenshots/image-26.png)
+![alt text](screenshots/image-27.png)
+![alt text](screenshots/image-28.png)
+![alt text](screenshots/image-29.png)
 > Hide sensitive IDs, credentials, and database details.
 
 ---
@@ -128,7 +128,7 @@ Run the Application Pipeline to configure the VMs, deploy EpicBook, and verify t
 Add a screenshot of the Application Pipeline run summary showing all required stages or jobs succeeded.
 
 
-![alt text](image-30.png)
+![alt text](screenshots/image-30.png)
 ---
 
 ### Screenshot 4 — Successful Ansible Play Recap

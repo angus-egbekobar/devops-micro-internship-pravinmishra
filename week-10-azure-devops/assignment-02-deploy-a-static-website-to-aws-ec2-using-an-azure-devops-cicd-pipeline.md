@@ -37,7 +37,7 @@ Add a screenshot of Azure Repos showing:
 * `index.html`
 
 
-![alt text](image-7.png)
+![alt text](screenshots/image-7.png)
 ---
 
 # Task 2 — Provision and Configure the Target EC2 Instance
@@ -66,7 +66,7 @@ Add a screenshot of the saved SSH Service Connection **Overview** page showing:
 * SSH connection type
 
 
-![alt text](image-8.png)
+![alt text](screenshots/image-8.png)
 
 > Do not expose a password, SSH private key, passphrase, or another credential.
 
@@ -93,7 +93,7 @@ Add a screenshot of `azure-pipelines.yml` open in the Azure Repos editor showing
 * `SSH@0` verification task
 
 
-![alt text](image-9.png)
+![alt text](screenshots/image-9.png)
 > Ensure that no password, SSH private key, PAT, or AWS credential is visible.
 
 ---
@@ -117,7 +117,7 @@ Add a screenshot of the successful pipeline run and log summary showing:
 * Your Full Name visible in the pipeline output
 
 
-![alt text](image-10.png)
+![alt text](screenshots/image-10.png)
 ---
 
 # Task 6 — Verify the Website and Automatic Trigger
@@ -138,7 +138,7 @@ Add a browser screenshot showing:
 * Updated website content after the automatic deployment
 
 
-![alt text](image-11.png)
+![alt text](screenshots/image-11.png)
 ## Final Website URL
 
 `http://3.255.120.35`
@@ -177,7 +177,7 @@ Add a screenshot of your LinkedIn post containing:
 * A screenshot of the successful pipeline or deployed website
 
 
-![alt text](image-12.png)
+![alt text](screenshots/image-12.png)
 
 ## LinkedIn Post URL
 
