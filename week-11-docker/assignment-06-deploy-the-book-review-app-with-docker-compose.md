@@ -30,8 +30,8 @@ backend/
 docker-compose.yml
 ```
 
-Add your screenshot here.
 
+![alt text](image-81.png)
 ---
 
 #### Screenshot 2 — Environment and Docker Ignore Files
@@ -47,8 +47,8 @@ backend/.dockerignore
 
 Ensure that no real passwords, tokens, or secrets are visible.
 
-Add your screenshot here.
 
+![alt text](<Screenshot 2026-10-12 165300.png>)
 ---
 
 # Task 2 — Create or Confirm Application Dockerfiles
@@ -63,16 +63,16 @@ Prepare Dockerfiles for the frontend and backend services and build both service
 
 Add a screenshot showing the completed `frontend/Dockerfile`.
 
-Add your screenshot here.
 
+![alt text](image-86.png)
 ---
 
 #### Screenshot 4 — Backend Dockerfile
 
 Add a screenshot showing the completed `backend/Dockerfile`.
 
-Add your screenshot here.
 
+![alt text](image-85.png)
 ---
 
 #### Screenshot 5 — Docker Compose Build
@@ -83,8 +83,8 @@ Add a screenshot of the terminal showing successful completion of:
 docker compose build
 ```
 
-Add your screenshot here.
 
+![alt text](image-87.png)
 ---
 
 # Task 3 — Create the Docker Compose Stack
@@ -105,8 +105,8 @@ Add a screenshot showing the MySQL service in `docker-compose.yml`, including:
 - `mysql_data` volume mount
 - No published MySQL port
 
-Add your screenshot here.
 
+![alt text](image-88.png)
 ---
 
 #### Screenshot 7 — Backend Configuration
@@ -118,8 +118,8 @@ Add a screenshot showing the backend service configuration, including:
 - Browser frontend origin configured for CORS
 - Published backend port
 
-Add your screenshot here.
 
+![alt text](image-89.png)
 ---
 
 #### Screenshot 8 — Frontend Configuration
@@ -130,16 +130,16 @@ Add a screenshot showing the frontend service configuration, including:
 - `depends_on` for the backend service
 - Browser-facing `NEXT_PUBLIC_API_URL`
 
-Add your screenshot here.
 
+![alt text](image-90.png)
 ---
 
 #### Screenshot 9 — Named Volume Definition
 
 Add a screenshot showing the `mysql_data` volume definition in `docker-compose.yml`.
 
-Add your screenshot here.
 
+![alt text](image-91.png)
 ---
 
 # Task 4 — Start and Verify the Stack
@@ -160,8 +160,8 @@ docker compose ps
 
 The output must show the MySQL, backend, and frontend services running. MySQL must show as healthy.
 
-Add your screenshot here.
 
+![alt text](image-92.png)
 ---
 
 #### Screenshot 11 — MySQL and Backend Logs
@@ -174,8 +174,8 @@ docker compose logs mysql backend --tail=50
 
 The logs must show MySQL readiness and successful backend database connection.
 
-Add your screenshot here.
 
+![alt text](image-93.png)
 ---
 
 # Task 5 — Test End-to-End Application Functionality
@@ -192,8 +192,8 @@ Add a browser screenshot showing successful user registration or login.
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
 
+![alt text](image-94.png)
 ---
 
 #### Screenshot 13 — Created Book Review
@@ -202,8 +202,8 @@ Add a browser screenshot showing a created book review visible in the applicatio
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
 
+![alt text](image-95.png)
 ---
 
 #### Screenshot 14 — CORS Verification
@@ -213,8 +213,8 @@ Add a browser developer-tools screenshot with:
 - The Network tab showing a successful API request
 - The Console drawer showing no CORS error after the API interaction
 
-Add your screenshot here.
 
+![alt text](image-96.png)
 ---
 
 # Task 6 — Prove MySQL Data Persistence
@@ -231,8 +231,8 @@ Add a browser screenshot showing the registered user or created review before th
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
 
+![alt text](image-98.png)
 ---
 
 #### Screenshot 16 — Non-Destructive Stack Restart
@@ -247,8 +247,8 @@ docker compose ps
 
 Do not use `docker compose down -v`.
 
-Add your screenshot here.
 
+![alt text](image-99.png)
 ---
 
 #### Screenshot 17 — Data After Restart
@@ -257,8 +257,8 @@ Add a browser screenshot showing the same registered user or review after the st
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
 
+![alt text](image-100.png)
 ---
 
 # Task 7 — Explain Docker Compose Teardown Modes
@@ -277,13 +277,14 @@ Write a short explanation of 5–8 lines covering:
 - When a full reset is useful
 - Why a full reset must not be used before persistence evidence is captured
 
-Write your explanation here.
 
+docker compose down stops and removes the project’s containers and its default network, but it preserves named volumes and the built images. 
+The MySQL data directory lives in a named volume (such as mysql_data), so keeping that volume means the database, including registered users and any added records, survives, and a later docker compose up -d starts a new MySQL container that reads the same data. When the volumes are removed with docker compose down -v (or docker volume rm), that data is permanently deleted, and MySQL initializes an empty database on the next start, so tables are recreated and previous users and reviews are gone. A full reset is useful for a clean slate, such as testing first-time initialization, clearing corrupted or test data, or changing database credentials, since MySQL only applies MYSQL_USER and MYSQL_PASSWORD when it first creates the data directory. It must not be used before the persistence evidence is captured, because deleting the volume destroys the very data that proves persistence, so the evidence has to be taken first: register a user, run docker compose down, run docker compose up -d, and show the user is still there.
 ---
 
 # Final Public Frontend URL
 
-**Frontend URL:** `http://<VM_PUBLIC_IP>:<FRONTEND_PORT>`
+**Frontend URL:** `http://51.20.52.180:3000
 
 Replace the placeholder with your working application URL.
 
@@ -291,7 +292,7 @@ Replace the placeholder with your working application URL.
 
 # GitHub Repository URL
 
-**Your Fork or Repository URL:** `Add your GitHub repository URL here`
+**Your Fork or Repository URL:** `https://github.com/angus-egbekobar
 
 ---
 
@@ -303,12 +304,11 @@ Create a LinkedIn post about the Book Review App deployment and what you learned
 
 ### Evidence
 
-**LinkedIn Post URL:** `Add your LinkedIn post URL here`
-
+**LinkedIn Post URL:** https://lnkd.in/p/eixDsezB
 #### LinkedIn Post Screenshot
 
 Add a screenshot of your published LinkedIn post here.
-
+![alt text](image-101.png)
 ---
 
 # Submission Checklist

@@ -12,7 +12,7 @@ In this assignment, you will build a read-only Bash script that audits a running
 
 # Target Container
 
-**Target Container Name:** `Add the exact container name here`
+**Target Container Name:** ` theepicbook-frontend-1
 
 ---
 
@@ -33,8 +33,8 @@ docker-audit.sh
 SKILL.md
 ```
 
-Add your screenshot here.
 
+![alt text](image-143.png)
 ---
 
 # Task 2 — Add the Docker Audit Skill to Claude Code
@@ -49,8 +49,8 @@ Add the supplied `docker-audit` skill to Claude Code and confirm that it is avai
 
 Add a screenshot of Claude Code showing `docker-audit` in the available skill list.
 
-Add your screenshot here.
 
+![alt text](image-144.png)
 ---
 
 # Task 3 — Validate the Audit Script
@@ -70,8 +70,8 @@ Add a terminal screenshot showing:
 - Your full name
 - The usage message displayed when the script runs without a container name
 
-Add your screenshot here.
 
+![alt text](image-145.png)
 ---
 
 # Task 4 — Run the Initial Docker Security Audit
@@ -90,16 +90,16 @@ Add a terminal screenshot showing:
 - `docker ps`
 - The audit command using the selected target container name
 
-Add your screenshot here.
 
+![alt text](image-153.png)
 ---
 
 #### Screenshot 5 — Initial Audit Results
 
 Add a terminal screenshot showing the initial Docker audit results.
 
-Add your screenshot here.
 
+![alt text](image-149.png)
 ---
 
 # Task 5 — Use AI Assistance to Understand the Findings
@@ -119,8 +119,8 @@ Add a Claude Code screenshot showing:
 - Recommended manual fix
 - Verification method
 
-Add your screenshot here.
 
+![alt text](image-154.png)
 ---
 
 # Task 6 — Apply One Container-Hardening Fix
@@ -135,16 +135,17 @@ Manually fix one WARN or FAIL finding from the initial audit.
 
 Add a screenshot of the updated Dockerfile or `docker-compose.yml` showing the selected hardening fix.
 
-Add your screenshot here.
 
+
+![alt text](image-155.png)
 ---
 
 #### Screenshot 8 — Updated Service Running
 
 Add a terminal screenshot showing your full name and the rebuilt or recreated service/container running successfully.
 
-Add your screenshot here.
 
+![alt text](image-156.png)
 ---
 
 # Task 7 — Re-Run the Audit and Compare Results
@@ -163,8 +164,8 @@ Add a terminal screenshot showing:
 - The updated running container
 - The final audit report
 
-Add your screenshot here.
 
+![alt text](image-157.png)
 ---
 
 ### Before-and-After Comparison
@@ -176,8 +177,27 @@ Write a short comparison covering:
 - Final audit result
 - Security benefit of the improvement
 
-Write your comparison here.
 
+
+**Initial audit finding**
+The audit of `theepicbook-frontend-1` returned an overall status of WARN (5 checks passed, 1 warned). The warning was on the container user check: `docker inspect` showed `Config.User` was empty, so the container ran as root. The image was built from `nginx:alpine` with no `USER` directive.
+
+**Change applied**
+I edited `frontend/Dockerfile` to use the unprivileged nginx image and run as a non-root user:
+
+- `FROM nginx:alpine` became `FROM nginxinc/nginx-unprivileged:alpine`
+- `COPY public ...` became `COPY --chown=nginx:nginx public ...`
+- `EXPOSE 80` became `EXPOSE 8080`
+- Added `USER nginx`
+
+Because the unprivileged image listens on port 8080 instead of 80, I also updated the frontend healthcheck in `docker-compose.yml` to `http://localhost:8080` and the `proxy_pass` target in `proxy/nginx.conf` to `http://frontend:8080`.
+
+**Final audit result**
+After rebuilding, the frontend container reported healthy and the audit's container user check changed from WARN to PASS. `Config.User` now shows `nginx`, and `docker exec theepicbook-frontend-1 id` shows `uid=101(nginx)`, with no other checks regressing.
+
+**Security benefit**   
+
+Running as a non-root user follows the principle of least privilege. If an attacker exploits a vulnerability in the web server or the app content, they gain only the limited `nginx` user's permissions rather than root inside the container. This makes container escape and tampering with the container filesystem much harder, and it reduces the damage of a compromise. It also removes the need for root privileges to bind port 80, since the container now uses an unprivileged port.
 ---
 
 # LinkedIn Requirement
@@ -188,14 +208,14 @@ Create a LinkedIn post about the container security checks you performed, one ha
 
 ### Evidence
 
-**LinkedIn Post URL:** `Add your LinkedIn post URL here`
+**LinkedIn Post URL:** `https://lnkd.in/p/ehwHcFPg
 
 #### LinkedIn Post Screenshot
 
 Add a screenshot of the published LinkedIn post, including the final audit result.
 
-Add your screenshot here.
 
+![alt text](image-158.png)
 ---
 
 # Submission Instructions

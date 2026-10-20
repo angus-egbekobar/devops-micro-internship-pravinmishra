@@ -28,8 +28,9 @@ Add a screenshot of the cloud console showing:
 - SSH port 22 enabled from your IP address
 - HTTP port 80 enabled from Anywhere
 
-Add your screenshot here.
 
+![alt text](image-2.png)
+![alt text](image-3.png)
 ---
 
 # Task 2 — Configure Cloud-Init for Docker Installation
@@ -50,8 +51,8 @@ cat /var/log/cloud-init-output.log
 
 The visible output must show Docker installation activity.
 
-Add your screenshot here.
 
+![alt text](image-4.png)
 ---
 
 # Task 3 — Verify Docker Installation
@@ -76,8 +77,8 @@ and
 docker ps
 ```
 
-Add your screenshot here.
 
+![alt text](image-5.png)
 ---
 
 # Task 4 — Clone the Application Repository
@@ -92,8 +93,8 @@ Download the static website source code.
 
 Add a screenshot of the terminal showing the contents of the `Azure-Static-Website` project directory after cloning the repository.
 
-Add your screenshot here.
 
+![alt text](image-6.png)
 ---
 
 # Task 5 — Create a Dockerfile
@@ -114,8 +115,8 @@ cat Dockerfile
 
 The Dockerfile must use `nginx:alpine`, copy the website files to the Nginx web root, and expose port 80.
 
-Add your screenshot here.
 
+![alt text](image-7.png)
 ---
 
 # Task 6 — Build the Docker Image
@@ -136,8 +137,8 @@ docker images
 
 The output must include the `static-site` image with the `latest` tag.
 
-Add your screenshot here.
 
+![alt text](image-8.png)
 ---
 
 # Task 7 — Deploy the Docker Container
@@ -162,8 +163,8 @@ The output must show the running `static-site` container with the port mapping:
 0.0.0.0:80->80/tcp
 ```
 
-Add your screenshot here.
 
+![alt text](image-9.png)
 ---
 
 # Task 8 — Verify the Deployment
@@ -182,8 +183,8 @@ Add a screenshot of the terminal showing the output of:
 curl ifconfig.me
 ```
 
-Add your screenshot here.
 
+![alt text](image-10.png)
 ---
 
 #### Screenshot 9 — Deployed Static Website
@@ -192,14 +193,14 @@ Add a screenshot of the browser showing the deployed static website.
 
 Ensure that the VM public IP address is visible in the browser address bar.
 
-Add your screenshot here.
 
+![alt text](image-11.png)
 ---
 
 # Public Application URL
 
-**VM Public IP / Application URL:** `Add your application URL here`
-
+**VM Public IP / Application URL:** 
+http://52.90.157.13/
 ---
 
 # LinkedIn Requirement
@@ -210,12 +211,12 @@ Create a LinkedIn post describing what you deployed, the deployment process, and
 
 ### Evidence
 
-**LinkedIn Post URL:** `Add your LinkedIn Post URL here`
+**LinkedIn Post URL:** https://lnkd.in/p/e6FqN-Cq
 
 #### LinkedIn Post Screenshot
 
 Add a screenshot of the published LinkedIn post here.
-
+![alt text](image-12.png)
 ---
 
 # Submission Instructions
