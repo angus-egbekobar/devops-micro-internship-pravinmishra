@@ -32,9 +32,8 @@ Create and enter the dedicated Deployment lab directory.
 
 #### Screenshot 01 — Output of `pwd` showing the directory ending in `/k8s-labs/deployments`
 
-Add your screenshot here.
 
----
+![alt text](image-19.png)--
 
 # Task 2 — Create the Basic Deployment
 
@@ -46,14 +45,14 @@ Create a two-replica NGINX Deployment and verify the automatically managed Repli
 
 #### Screenshot 02 — Completed basic `nginx-deployment.yaml` showing two replicas and the initial NGINX image
 
-Add your screenshot here.
 
+![alt text](image-20.png)
 ---
 
 #### Screenshot 03 — Successful apply output and verification output showing the Deployment, its automatically created ReplicaSet, and two Pods with `1/1` under `READY` and `Running` under `STATUS`
 
-Add your screenshot here.
 
+![alt text](image-21.png)
 ---
 
 # Task 3 — Configure the RollingUpdate Strategy
@@ -66,14 +65,14 @@ Configure RollingUpdate to maintain the desired available replica count during a
 
 #### Screenshot 04 — Updated YAML showing `RollingUpdate`, `maxSurge: 1`, and `maxUnavailable: 0`
 
-Add your screenshot here.
 
+![alt text](image-22.png)
 ---
 
 #### Screenshot 05 — Successful apply output and Deployment details showing the configured rolling-update strategy
 
-Add your screenshot here.
 
+![alt text](image-23.png)
 ---
 
 # Task 4 — Perform and Roll Back an Image Update
@@ -86,26 +85,26 @@ Update NGINX to 1.23.1, observe the rollout, and return to the previous stable r
 
 #### Screenshot 06 — Image-update command and rollout status showing successful completion
 
-Add your screenshot here.
 
+![alt text](image-24.png)
 ---
 
 #### Screenshot 07 — ReplicaSet output showing the previous and updated ReplicaSets, and Deployment details showing `nginx:1.23.1`
 
-Add your screenshot here.
 
+![alt text](image-25.png)
 ---
 
 #### Screenshot 08 — Rollback command and rollout status showing successful completion
 
-Add your screenshot here.
 
+![alt text](image-26.png)
 ---
 
 #### Screenshot 09 — Rollout history and Deployment details showing the restored `nginx:1.21.1` image
 
-Add your screenshot here.
 
+![alt text](image-27.png)
 ---
 
 # Task 5 — Scale the Deployment
@@ -118,14 +117,14 @@ Scale the workload to five replicas and return it to two.
 
 #### Screenshot 10 — Scale-up command and output showing five Pods with `1/1` under `READY` and `Running` under `STATUS`
 
-Add your screenshot here.
 
+![alt text](image-28.png)
 ---
 
 #### Screenshot 11 — Scale-down command and output showing the final two Pods with `1/1` under `READY` and `Running` under `STATUS`
 
-Add your screenshot here.
 
+![alt text](image-29.png)
 ---
 
 # Task 6 — Share Your Kubernetes Deployment Progress on WhatsApp Status
@@ -172,8 +171,20 @@ A draft or editing screen is not sufficient.
 
 Write a short note explaining how Deployments manage ReplicaSets, perform rolling updates and rollbacks, and scale Pods.
 
-Add your answer here.
 
+A Deployment in Kubernetes is a higher-level abstraction that manages ReplicaSets and ensures Pods run reliably.
+
+Managing ReplicaSets:
+Deployments automatically create and update ReplicaSets, which in turn maintain the desired number of Pod replicas. When you update a Deployment, Kubernetes generates a new ReplicaSet and gradually shifts traffic from the old one to the new one.
+
+Rolling Updates:
+Deployments perform rolling updates by incrementally replacing Pods from the old ReplicaSet with Pods from the new one. This minimizes downtime and ensures continuous availability during upgrades.
+
+Rollbacks:
+If something goes wrong, Deployments support rollbacks to previous ReplicaSet revisions. This allows you to quickly restore a stable version of your application.
+
+Scaling Pods:
+Deployments make scaling easy — you can increase or decrease the number of replicas with a single command (kubectl scale deployment <name> --replicas=N). Kubernetes ensures the desired number of Pods are running at all times.
 ---
 
 # Submission Instructions

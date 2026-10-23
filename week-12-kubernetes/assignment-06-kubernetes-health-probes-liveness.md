@@ -30,20 +30,20 @@ Create and enter a dedicated directory for the liveness-probe lab.
 
 #### Screenshot 1 — Terminal showing that you are working inside `~/k8s-labs/health-probes-liveness`
 
-Add your screenshot here.
 
+![alt text](image-61.png)
 ---
 
 ### Notes
 
 **1. What problem does a liveness probe solve?**
 
-Add your answer here.
+A liveness probe detects if a container has become unresponsive or stuck. If the probe fails, Kubernetes automatically restarts the container to restore it to a healthy state, preventing situations where an application is running but no longer functioning properly
 
 **2. What is the key difference between a readiness probe and a liveness probe?**
 
-Add your answer here.
 
+A readiness probe decides whether a Pod can receive traffic (failing it marks the Pod NotReady without restarting it), while a liveness probe decides whether the container is still healthy (failing it causes Kubernetes to restart the container).
 ---
 
 # Task 2 — Create a Baseline Deployment Without Probes
@@ -56,36 +56,36 @@ Create a baseline NGINX Deployment with two replicas and no health probes.
 
 #### Screenshot 2 — Completed `00-nginx-deploy-baseline.yaml` manifest
 
-Add your screenshot here.
 
+![alt text](image-62.png)
 ---
 
 #### Screenshot 3 — Output showing a successful rollout and two running NGINX Pods
 
-Add your screenshot here.
 
+![alt text](image-63.png)
 ---
 
 #### Screenshot 4 — Relevant output from `kubectl describe deployment nginx-deployment`
 
-Add your screenshot here.
 
+![alt text](image-64.png)
 ---
 
 ### Notes
 
 **1. How many replicas does this Deployment maintain?**
 
-Add your answer here.
+2
 
 **2. Are any health probes configured in the baseline Deployment?**
 
-Add your answer here.
+no
 
 **3. Why is a baseline useful before adding a liveness probe?**
 
-Add your answer here.
 
+A baseline Deployment gives you a stable starting point with no probes, so you can confirm that Pods run correctly under normal conditions. This way, when you add a liveness probe, you can clearly see the difference it makes — whether it restarts unhealthy containers or not. It also helps isolate issues: if something breaks after adding the probe, you know the probe configuration is the cause, not the Deployment itself.
 ---
 
 # Task 3 — Add a Liveness Probe
@@ -98,39 +98,39 @@ Add an HTTP liveness probe so Kubernetes can periodically check whether the NGIN
 
 #### Screenshot 5 — Completed `01-nginx-deploy-liveness.yaml` manifest showing the liveness probe
 
-Add your screenshot here.
 
+![alt text](image-65.png)
 ---
 
 #### Screenshot 6 — Output showing successful rollout and running Pods
 
-Add your screenshot here.
 
+![alt text](image-66.png)
 ---
 
 #### Screenshot 7 — Pod description showing liveness-probe details
 
-Add your screenshot here.
 
+![alt text](image-67.png)
 ---
 
 ### Notes
 
 **1. What path and port does the liveness probe check?**
 
-Add your answer here.
+It checks the HTTP path / on port 80.
 
 **2. What does `initialDelaySeconds: 10` do?**
 
-Add your answer here.
+It waits 10 seconds after the container starts before running the first liveness check, giving the application time to initialize.
 
 **3. What does `failureThreshold: 3` mean?**
 
-Add your answer here.
+If the liveness probe fails 3 consecutive times, Kubernetes considers the container unhealthy and restarts it.
 
 **4. Does a successful liveness probe control whether a Pod receives traffic? Explain briefly.**
 
-Add your answer here.
+No. A liveness probe only determines if the container should be restarted when unhealthy. Readiness probes control whether a Pod is marked Ready and can receive traffic. Liveness ensures recovery, while readiness ensures availability.
 
 ---
 

@@ -34,22 +34,22 @@ Create and enter a dedicated directory for the auto-scaling lab.
 
 #### Screenshot 1 — Terminal showing that you are working inside `~/k8s-labs/autoscaling`
 
-Add your screenshot here.
 
+![alt text](image-30.png)
 ---
 
 ### Notes
 
 **1. What is the difference between auto-healing and auto-scaling?**
 
-Add your answer here.
 
+Auto-healing automatically replaces failed or unhealthy Pods to maintain availability, while auto-scaling adjusts the number of Pods up or down based on workload demand.
 ---
 
 **2. Which Kubernetes feature will you use for CPU-based auto-scaling?**
 
-Add your answer here.
 
+i use the Horizontal Pod Autoscaler (HPA), which automatically adjusts the number of Pods based on CPU utilization (or other metrics).
 ---
 
 # Task 2 — Test Auto-Healing with a Deployment
@@ -62,46 +62,45 @@ Create a Deployment with two replicas, delete one Pod, and observe Kubernetes cr
 
 #### Screenshot 2 — Completed `autohealing-deployment.yaml` manifest
 
-Add your screenshot here.
 
+![alt text](image-31.png)
 ---
 
 #### Screenshot 3 — Output of `kubectl get pods` showing two running Pods before deletion
 
-Add your screenshot here.
 
+![alt text](image-32.png)
 ---
 
 #### Screenshot 4 — Output of the `kubectl delete pod` command
 
-Add your screenshot here.
 
+![alt text](image-33.png)
 ---
 
 #### Screenshot 5 — Output of `kubectl get pods` showing the replacement Pod and two running Pods
 
-Add your screenshot here.
 
+![alt text](image-34.png)
 ---
 
 ### Notes
 
 **1. What happened after you deleted one Pod?**
 
-Add your answer here.
-
+It gets replaced automatically — Kubernetes created another Pod to match the desired replica count defined in the Deployment.
 ---
 
 **2. What Kubernetes resource maintains the desired replica count for this Deployment?**
 
-Add your answer here.
 
+The ReplicaSet is the resource that ensures the Deployment always runs the specified number of Pods.
 ---
 
 **3. What proves that auto-healing worked?**
 
-Add your answer here.
 
+After deleting a Pod, a new Pod was immediately created and became available, showing that Kubernetes restored the desired state without manual intervention.
 ---
 
 # Task 3 — Create a Deployment for HPA
@@ -114,34 +113,34 @@ Create a Deployment with CPU resource requests and limits so that HPA can calcul
 
 #### Screenshot 6 — Completed `hpa-deployment.yaml` manifest showing CPU requests and limits
 
-Add your screenshot here.
 
+![alt text](image-36.png)
 ---
 
 #### Screenshot 7 — Output showing `nginx-deployment` and its running Pods
 
-Add your screenshot here.
 
+![alt text](image-35.png)
 ---
 
 ### Notes
 
 **1. What does `cpu: "100m"` mean?**
 
-Add your answer here.
 
+It means the Pod is requesting 100 millicores, i.e., 0.1 of a CPU core.
 ---
 
 **2. What is the difference between a CPU request and a CPU limit?**
 
-Add your answer here.
 
+A request is the guaranteed minimum CPU reserved for the Pod, while a limit is the maximum CPU the Pod is allowed to use.
 ---
 
 **3. Why does CPU-based HPA require CPU requests?**
 
-Add your answer here.
 
+Because the HPA calculates utilization as a percentage of the requested CPU, so without requests it has no baseline to measure scaling decisions.
 ---
 
 # Task 4 — Enable and Verify Metrics Server
@@ -154,28 +153,28 @@ Ensure the cluster can collect resource metrics for the HPA.
 
 #### Screenshot 8 — Output showing Metrics Server running, or `kubectl top pods` displaying Pod metrics
 
-Add your screenshot here.
 
+![alt text](image-37.png)
 ---
 
 ### Notes
 
 **1. Why does HPA need Metrics Server?**
 
-Add your answer here.
 
+HPA needs the Metrics Server because  the Metrics Server collects resource usage data (like CPU and memory) from Pods, which HPA uses to decide when to scale.
 ---
 
 **2. What issue can occur if Metrics Server is not working?**
 
-Add your answer here.
 
+The HPA cannot retrieve metrics, so Pods will not scale automatically even under high load.
 ---
 
 **3. What does `kubectl top pods` help you check?**
 
-Add your answer here.
 
+It shows the current CPU and memory usage of each Pod, helping verify scaling decisions and resource consumption.
 ---
 
 # Task 5 — Create a Horizontal Pod Autoscaler
@@ -188,40 +187,40 @@ Create an HPA that keeps at least two Pods running and can scale up to five Pods
 
 #### Screenshot 9 — The imperative command output OR completed `hpa-nginx.yaml` manifest
 
-Add your screenshot here.
 
+![alt text](image-38.png)
 ---
 
 #### Screenshot 10 — Output of `kubectl get hpa` and the relevant `kubectl describe hpa` command
 
-Add your screenshot here.
 
+![alt text](image-39.png)
 ---
 
 ### Notes
 
 **1. What does `minReplicas: 2` mean?**
 
-Add your answer here.
 
+It ensures the Deployment will always run at least 2 Pods, even if CPU usage is low.
 ---
 
 **2. What does `maxReplicas: 5` mean?**
 
-Add your answer here.
 
+It sets the upper limit so the Deployment can scale up to a maximum of 5 Pods under high load.
 ---
 
 **3. What does `averageUtilization: 50` mean?**
 
-Add your answer here.
 
+It tells the HPA to keep average CPU usage at 50% of the requested CPU across all Pods.
 ---
 
 **4. Why should only one HPA manage a Deployment at a time?**
 
-Add your answer here.
 
+only one HPA should manage a Deployment at a time because it  tells the HPA to keep average CPU usage at 50% of the requested CPU across all Pods.
 ---
 
 # Task 6 — Optional: Generate CPU Load and Observe Scaling
@@ -234,7 +233,7 @@ Generate CPU load in one NGINX Pod and observe how HPA responds.
 
 If you skip this task, write “Not completed — optional” and leave the remaining Task 6 placeholders blank.
 
-Task status: Add your status here.
+Task status: “Not completed — optional
 
 #### Screenshot 11 — Terminal showing the CPU-load command running inside the selected Pod
 
@@ -276,12 +275,12 @@ Add your answer here.
 
 #### Screenshot 13 — Published LinkedIn post showing your name, the required explanation, and the attached Kubernetes screenshot
 
-Add your screenshot here.
 
+![alt text](image-40.png)
 #### Linkedin Post Link
 
-Add your link here
 
+https://lnkd.in/p/egb--9ZN
 ---
 
 # Submission Instructions

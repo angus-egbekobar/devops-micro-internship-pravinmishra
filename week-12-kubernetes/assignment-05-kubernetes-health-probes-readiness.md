@@ -32,19 +32,19 @@ Create and enter a dedicated directory for the readiness-probe lab.
 
 #### Screenshot 1 — Terminal showing that you are working inside `~/k8s-labs/health-probes-readiness`
 
-Add your screenshot here.
 
+![alt text](image-41.png)
 ---
 
 ### Notes
 
 **1. What is the purpose of a readiness probe?**
 
-Add your answer here.
+It checks if a Pod is ready to accept traffic, ensuring Kubernetes only routes requests to healthy containers.
 
 **2. Why is a Pod being Running not always enough to confirm it can serve traffic?**
 
-Add your answer here.
+Because a Pod may be running but still initializing, loading data, or failing internally, so it might not yet be able to handle requests.
 
 ---
 
@@ -58,35 +58,35 @@ Create a baseline NGINX Deployment with two replicas and no readiness probe.
 
 #### Screenshot 2 — Completed `00-nginx-deploy-baseline.yaml` manifest
 
-Add your screenshot here.
 
+![alt text](image-42.png)
 ---
 
 #### Screenshot 3 — Output showing a successful rollout and two running NGINX Pods
 
-Add your screenshot here.
 
+![alt text](image-43.png)
 ---
 
 #### Screenshot 4 — Relevant output from `kubectl describe deployment nginx-deployment`
 
-Add your screenshot here.
 
+![alt text](image-44.png)
 ---
 
 ### Notes
 
 **1. How many replicas does this Deployment maintain?**
 
-Add your answer here.
+2
 
 **2. What does `maxUnavailable: 0` mean during a rolling update?**
 
-Add your answer here.
+It means that during the update, no Pods are allowed to be unavailable — all existing Pods must stay running until new ones are ready
 
 **3. Is a readiness probe configured in this baseline Deployment?**
 
-Add your answer here.
+No, the baseline Deployment does not have a readiness probe, so Kubernetes only checks if the Pod is running, not whether it can actually serve traffic.
 
 ---
 
@@ -100,39 +100,39 @@ Add an HTTP readiness probe so Kubernetes checks whether each NGINX container is
 
 #### Screenshot 5 — Completed `01-nginx-deploy-readiness.yaml` manifest showing the readiness probe
 
-Add your screenshot here.
 
+![alt text](image-46.png)
 ---
 
 #### Screenshot 6 — Output of the successful rollout and ready Pods
 
-Add your screenshot here.
 
+![alt text](image-48.png)
 ---
 
 #### Screenshot 7 — Pod description showing readiness conditions and readiness probe details
 
-Add your screenshot here.
 
+![alt text](image-47.png)
 ---
 
 ### Notes
 
 **1. What path and port does the readiness probe check?**
 
-Add your answer here.
+It checks the HTTP path / on port 80.
 
 **2. What does `initialDelaySeconds: 2` do?**
 
-Add your answer here.
+It waits 2 seconds after the container starts before running the first readiness check.
 
 **3. What does `periodSeconds: 5` do?**
 
-Add your answer here.
+It runs the readiness probe every 5 seconds to continually verify if the container is ready.
 
 **4. What must happen before Kubernetes considers this Pod ready?**
 
-Add your answer here.
+The readiness probe must successfully return a 200 OK response from the / path on port 80, meeting the success threshold defined.
 
 ---
 
@@ -146,45 +146,45 @@ Intentionally fail the readiness probe, observe the NotReady behavior, and then 
 
 #### Screenshot 8 — `02-nginx-readiness-broken.yaml` showing `/does-not-exist`
 
-Add your screenshot here.
 
+![alt text](image-49.png)
 ---
 
 #### Screenshot 9 — Output showing the rollout timeout or incomplete rollout
 
-Add your screenshot here.
 
+![alt text](image-50.png)
 ---
 
 #### Screenshot 10 — Pod details showing `Ready: False` or readiness-probe failure events
 
-Add your screenshot here.
 
+![alt text](image-51.png)
 ---
 
 #### Screenshot 11 — Output showing successful rollout and ready Pods after the fix
 
-Add your screenshot here.
 
+![alt text](image-53.png)
 ---
 
 ### Notes
 
 **1. Why did the readiness probe fail?**
 
-Add your answer here.
+Because the probe was configured to check the path /does-not-exist on port 80, which returned a 404 Not Found. The container was running, but the probe could not succeed
 
 **2. What happened to the Pod readiness status?**
 
-Add your answer here.
+The Pod stayed in Running state, but its Ready condition was False. This means Kubernetes did not consider it ready to serve traffic, so it wasn’t added to the Service endpoints.
 
 **3. Why did the rollout fail to complete?**
 
-Add your answer here.
+During a rolling update, Kubernetes waits for new Pods to become ready before replacing old ones. Since the readiness probe never succeeded, the new Pods were never marked ready, so the rollout stalled and could not finish.
 
 **4. How did you restore the Deployment successfully?**
 
-Add your answer here.
+By fixing the readiness probe configuration — for example, changing the probe path back to / (a valid endpoint for Nginx). Once the probe returned successful responses, the Pods became ready, and Kubernetes completed the rollout.
 
 ---
 
@@ -198,58 +198,58 @@ Observe how readiness prevents a bad new Pod from replacing healthy Pods during 
 
 #### Screenshot 12 — Successful update command and rollout status
 
-Add your screenshot here.
 
+![alt text](image-54.png)
 ---
 
 #### Screenshot 13 — ReplicaSets and Pods after the successful rolling update
 
-Add your screenshot here.
 
+![alt text](image-55.png)
 ---
 
 #### Screenshot 14 — Completed `04-readiness-broken-patch.yaml`
 
-Add your screenshot here.
 
+![alt text](image-56.png)
 ---
 
 #### Screenshot 15 — Output showing the expected stalled rollout or timeout
 
-Add your screenshot here.
 
+![alt text](image-57.png)
 ---
 
 #### Screenshot 16 — Deployment or Pod output showing the effect of the broken readiness probe
 
-Add your screenshot here.
 
+![alt text](image-58.png)
 ---
 
 #### Screenshot 17 — Successful rollout status after restoring the fixed configuration
 
-Add your screenshot here.
 
+![alt text](image-59.png)
 ---
 
 ### Notes
 
 **1. What happened during the successful rolling update?**
 
-Add your answer here.
+Kubernetes replaced the old Pods with new ones using the updated configuration. Each new Pod passed its readiness probe, became ready, and then the old Pods were terminated — completing the rollout smoothly.
 
 **2. Why did Kubernetes create a new ReplicaSet?**
 
-Add your answer here.
+Because every Deployment update (like a YAML change or image update) generates a new ReplicaSet to manage the new version of Pods while keeping the old ReplicaSet until the rollout finishes.
 
 **3. Why were the new Pods unable to replace the existing healthy Pods after readiness was broken?**
 
-Add your answer here.
+The new pods failed their readiness probe because the path was misconfigured to /does-not-exist. As a result, Kubernetes marked them as NotReady (0/1 Ready), and because they never achieved a ready status, the rolling update stalled.
 
 **4. How does `maxUnavailable: 0` protect availability during this rollout?**
 
-Add your answer here.
 
+It ensures that no Pods are taken down until new ones are confirmed ready, guaranteeing uninterrupted service throughout the update process.
 ---
 
 # Task 6 — Share Your Readiness-Probe Learning on LinkedIn
@@ -262,11 +262,11 @@ Share what you learned about Kubernetes readiness probes and how they protect ro
 
 #### Screenshot 18 — Published LinkedIn post
 
-Add your screenshot here.
+![alt text](image-60.png)
 
 #### Linkedin post link
 
-Add your post link here
+https://lnkd.in/p/ekU34b7v
 
 ---
 
