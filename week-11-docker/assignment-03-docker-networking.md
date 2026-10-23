@@ -28,8 +28,8 @@ docker network ls
 
 The output must include the default `bridge`, `host`, and `none` networks.
 
-Add your screenshot here.
 
+![alt text](image-22.png)
 ---
 
 #### Screenshot 2 — Nginx Image Pull
@@ -40,8 +40,8 @@ Add a screenshot of the terminal showing successful completion of:
 docker pull nginx:alpine
 ```
 
-Add your screenshot here.
 
+![alt text](image-23.png)
 ---
 
 #### Screenshot 3 — Running `myweb` Container
@@ -58,8 +58,8 @@ The output must show the running `myweb` container with:
 0.0.0.0:80->80/tcp
 ```
 
-Add your screenshot here.
 
+![alt text](image-24.png)
 ---
 
 #### Screenshot 4 — Nginx Welcome Page
@@ -67,13 +67,13 @@ Add your screenshot here.
 Add a browser screenshot showing the Nginx Welcome Page at:
 
 ```text
-http://<YOUR-VM-PUBLIC-IP>
+http://localhost
 ```
 
 Ensure that the VM public IP is visible in the address bar. Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
 
+![alt text](image-25.png)
 ---
 
 # Task 2 — Connect Containers Using a Custom Bridge Network
@@ -92,8 +92,8 @@ Add a screenshot of the terminal showing `mynetwork` in:
 docker network ls
 ```
 
-Add your screenshot here.
 
+![alt text](image-26.png)
 ---
 
 #### Screenshot 6 — Running `web` and `client` Containers
@@ -106,8 +106,8 @@ docker ps
 
 The output must show both `web` and `client` containers running without published host ports.
 
-Add your screenshot here.
 
+![alt text](image-27.png)
 ---
 
 #### Screenshot 7 — Service Discovery by Container Name
@@ -120,8 +120,8 @@ docker exec client wget -qO- http://web
 
 The output must display the Nginx Welcome Page HTML.
 
-Add your screenshot here.
 
+![alt text](image-28.png)
 ---
 
 #### Screenshot 8 — Custom Network Inspection
@@ -134,8 +134,8 @@ docker network inspect mynetwork
 
 The output must show both `web` and `client` connected to `mynetwork`.
 
-Add your screenshot here.
 
+![alt text](image-29.png)
 ---
 
 # Task 3 — Demonstrate Multi-Network Isolation
@@ -156,8 +156,8 @@ docker network ls
 
 The output must include both `frontend-network` and `backend-network`.
 
-Add your screenshot here.
 
+![alt text](image-30.png)
 ---
 
 #### Screenshot 10 — Running Multi-Network Containers
@@ -174,8 +174,8 @@ The output must show:
 - `backend` without a published host port
 - `db` without a published host port
 
-Add your screenshot here.
 
+![alt text](image-31.png)
 ---
 
 #### Screenshot 11 — Frontend Network Inspection
@@ -188,8 +188,8 @@ docker network inspect frontend-network
 
 The output must show `frontend` and `backend`.
 
-Add your screenshot here.
 
+![alt text](image-32.png)
 ---
 
 #### Screenshot 12 — Backend Network Inspection
@@ -202,8 +202,8 @@ docker network inspect backend-network
 
 The output must show `backend` and `db`.
 
-Add your screenshot here.
 
+![alt text](image-33.png)
 ---
 
 #### Screenshot 13 — Frontend-to-Backend Communication
@@ -216,16 +216,16 @@ docker exec frontend wget -qO- http://backend
 
 The output must display the Nginx Welcome Page HTML.
 
-Add your screenshot here.
 
+![alt text](image-34.png)
 ---
 
 #### Screenshot 14 — Backend-to-Database Communication
 
 Add a screenshot of the terminal showing a successful connection to `db` on port `27017` from the `backend` container.
 
-Add your screenshot here.
 
+![alt text](image-35.png)
 ---
 
 #### Screenshot 15 — Frontend-to-Database Isolation
@@ -238,8 +238,8 @@ The output must include:
 Expected result: frontend cannot reach db
 ```
 
-Add your screenshot here.
 
+![alt text](image-36.png)
 ---
 
 #### Screenshot 16 — Public Frontend Access
@@ -247,13 +247,13 @@ Add your screenshot here.
 Add a browser screenshot showing the Nginx Welcome Page from the `frontend` container at:
 
 ```text
-http://<YOUR-VM-PUBLIC-IP>
+http://localhost
 ```
 
 Ensure that the VM public IP is visible in the address bar. Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
 
+![alt text](image-37.png)
 ---
 
 # Task 4 — Deploy an Application Using Docker Host Network Mode
@@ -274,8 +274,8 @@ docker ps
 
 The output must show the running `fastapp` container.
 
-Add your screenshot here.
 
+![alt text](image-38.png)
 ---
 
 #### Screenshot 18 — Host Network Mode Verification
@@ -292,8 +292,8 @@ The output must confirm:
 "NetworkMode": "host"
 ```
 
-Add your screenshot here.
 
+![alt text](image-39.png)
 ---
 
 #### Screenshot 19 — Host-Networked Nginx Page
@@ -301,13 +301,13 @@ Add your screenshot here.
 Add a browser screenshot showing the Nginx Welcome Page at:
 
 ```text
-http://<YOUR-VM-PUBLIC-IP>
+http://localhost
 ```
 
 Ensure that the VM public IP is visible in the address bar. Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
 
+![alt text](image-40.png)
 ---
 
 #### Screenshot 20 — Host-Networked Container Cleanup
@@ -319,8 +319,8 @@ docker stop fastapp
 docker rm fastapp
 ```
 
-Add your screenshot here.
 
+![alt text](image-41.png)
 ---
 
 # Networking Notes
@@ -332,8 +332,24 @@ Write a short note explaining:
 - Why the frontend could not access the database in Task 3
 - The difference between bridge mode and host network mode
 
-Write your note here.
 
+### Default bridge networking
+
+When Docker starts, it creates a default network called bridge. Any container started without a --network option joins it and gets a private IP address (usually in 172.17.0.0/16) on the host’s docker0 bridge. Containers on it can reach each other by IP address, but not by name, because the default bridge has no automatic DNS. All containers share the one network, so there is no isolation between unrelated apps, and outside access needs published ports (-p).
+
+### Container-name communication on a custom bridge network
+
+A user-defined bridge (for example backend-network) comes with Docker’s built-in DNS. Containers on the same custom network can reach each other using the container name as the hostname. This is why the backend connects to MongoDB with mongodb://db:27017/mydb, and db resolves to the database container’s current IP even if that IP changes. Custom networks also let you separate groups of containers, since only containers attached to the same network can talk to each other.
+
+### Why the frontend could not access the database in Task 3
+
+* The architecture uses two custom networks. The frontend is attached only to frontend-network, and the database only to backend-network. They sit on different subnets with no route between them, and Docker’s DNS only resolves names within a shared network, so db cannot even be resolved from the frontend. The test showed Expected result: frontend cannot reach db. The backend is the only container attached to both networks, so it is the only path from the frontend side to the database. MongoDB’s port is also never published to the host, which keeps it unreachable from outside.
+
+### Bridge mode vs host network mode
+
+* In bridge mode, each container gets its own isolated network stack and a private IP address on a virtual bridge. Because of that, the container’s ports are not reachable from outside until you publish them with -p host:container, and two containers can use the same internal port without any conflict. Containers are also separated by network, so you control which ones can talk to each other. The cost is a small amount of overhead from network address translation.
+
+* In host mode, the container skips that isolation and shares the host’s network stack directly. It has no IP of its own, and whatever port the app listens on is immediately available on the host, so -p is not needed (and is ignored). This is slightly faster and simpler, but there is no network isolation between the container and the host, and two containers cannot listen on the same port on one machine. Host mode also only works fully on Linux.
 ---
 
 # LinkedIn Requirement
@@ -348,14 +364,14 @@ Create a LinkedIn post about the Docker networking modes explored, one key lesso
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
 
+https://lnkd.in/p/etnfbpxK
 ---
 
 #### LinkedIn Post Screenshot
 
 Add a screenshot of the published LinkedIn post here.
-
+![alt text](image-42.png)
 ---
 
 # Submission Instructions

@@ -14,11 +14,11 @@
 
 | | |
 |---|---|
-| **Name** | Pravin Mishra |
-| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
-| **Location** | Helsinki, Finland |
-| **Background** | Cloud, DevOps & AI Consultant |
-| **Goal** | Train 10,000+ DevOps professionals |
+| **Name** | Angus Egbekobar |
+| **LinkedIn** | [Angus-Egbekobar-AWS-Certified-Solution-Architect](https://www.linkedin.com/in/Angus-Egbekobar) |
+| **Location** | Lagos, Nigeria |
+| **Background** | Finance, Cloud & DevOps |
+| **Goal** | DevOps Engineer with Agentic AI |
 
 ---
 
@@ -67,17 +67,17 @@ This is not a course. It is an internship-style program — real deployments, re
 
 **Your stack (uncomment each badge as you earn it):**
 
-<!-- Week 00 → Internet & Networking Basics -->
-<!-- [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) -->
+ Week 00 → Internet & Networking Basics
+[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)
 
-<!-- Week 01 → Success Mindset -->
-<!-- [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) -->
+Week 01 → Success Mindset 
+[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) 
 
 <!-- Week 02 → Agentic AI with Claude Code -->
 <!-- [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) -->
 
-<!-- Week 03 → Linux & Bash for DevOps -->
-<!-- [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) -->
+Week 03 → Linux & Bash for DevOps 
+[![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) 
 
 <!-- Week 04 → Git & GitHub -->
 <!-- [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) -->
@@ -130,14 +130,14 @@ This is not a course. It is an internship-style program — real deployments, re
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
-| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending | — | — |
+| 00 | Internet & Networking Basics ✅  |✅ Completed;|✅ Solved |https://www.linkedin.com/posts/angus-egbekobar_dmi-devops-micro-internship-with-agentic-share-7486376994222309377-aDws/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg  |https://medium.com/@angusegbekobar/building-my-networking-foundations-for-devops-54bf3ad83bba
+| 01 | Success Mindset |  ✅ Completed| ✅ Solved | https://www.linkedin.com/posts/angus-egbekobar_week-1-building-my-success-mindset-dmi-share-7484524528325480448-X3_a/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg | https://medium.com/@angusegbekobar/how-i-built-my-mindset-os-before-writing-my-first-line-of-devops-code-91c3d3ba63a5 |
 | 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
-| 03 | Linux & Bash for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
-| 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
+| 03 | Linux & Bash for DevOps | ✅ Completed; | ✅ Solved | https://www.linkedin.com/posts/angus-egbekobar_devops-linux-bash-ugcPost-7484330302337761281-IUfp/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg_ | https://medium.com/p/62a50dd33df7?postPublishedType=initial |
+| 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | https://www.linkedin.com/posts/angus-egbekobar_dmi-devops-micro-internship-with-agentic-share-7486445895388057600-kezx/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg | https://medium.com/@angusegbekobar/mastering-professional-git-github-workflows-my-week-4-journey-in-devops-0bc860ddc561 |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
-| 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
-| 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
+| 06 | AWS Cloud | ⬜ In Progress &nbsp;| ⏳ Pending | https://www.linkedin.com/posts/angus-egbekobar_aws-awscloud-devops-activity-7497868222482792451-N13a?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg | https://medium.com/@angusegbekobar/deploying-a-production-style-three-tier-book-review-application-on-aws-560efa6d289b |
+| 07 | Azure Cloud | pending | ⏳ Pending | https://www.linkedin.com/posts/angus-egbekobar_devops-azure-microsoftazure-activity-7501556389203566592-GzaD?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpBxXUBgkRH28KX9wNr0QE4jJlRTmgHtCg | https://medium.com/@angusegbekobar/deploying-a-three-tier-book-review-application-on-azure-from-source-code-to-production-style-d0e0ce093ca1|
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
