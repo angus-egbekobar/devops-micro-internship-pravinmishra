@@ -12,17 +12,17 @@ Deploy the Book Review App as a production-style three-tier application using Ku
 
 ## Submission Details
 
-**Full Name:** Add your full name here.
+**Full Name:** Angus Egbekobar
 
-**Kubernetes Platform:** Add your platform here.
+**Kubernetes Platform:** AWS EKS
 
 **Namespace:** book-review
 
-**Frontend URL or IP:** Add the working endpoint here.
+**Frontend URL or IP:** a09115e295de94a1aa0504ce82e54fc5-851348780.eu-west-1.elb.amazonaws.com
 
-**Access Method:** Public LoadBalancer, Ingress, or documented local access.
+**Access Method:** Public LoadBalancer.
 
-**GitHub Manifests or Helm Chart URL:** Add your repository link here.
+**GitHub Manifests or Helm Chart URL:** https://github.com/angus-egbekobar
 
 **Architecture Diagram:** Add your diagram or link here.
 
@@ -38,7 +38,7 @@ Prepare the cluster, application source, container images, and tooling needed fo
 
 #### Screenshot 1 — Active Kubernetes context and Ready nodes
 
-Add your screenshot here.
+![alt text](image-120.png)
 
 ---
 
@@ -46,7 +46,7 @@ Add your screenshot here.
 
 Required only if you choose Helm. Skip this screenshot if using YAML manifests.
 
-Add your screenshot here, or write “Not applicable — using YAML manifests.”
+Not applicable
 
 ---
 
@@ -60,7 +60,7 @@ Document the workloads, networking, configuration, storage, and permitted commun
 
 #### Screenshot 3 — Completed Kubernetes architecture diagram
 
-Add your screenshot here.
+![alt text](image-140.png)
 
 ---
 
@@ -74,13 +74,13 @@ Provide application configuration and credentials without embedding sensitive va
 
 #### Screenshot 4 — ConfigMap configuration or describe output showing non-sensitive values
 
-Add your screenshot here.
+![alt text](image-123.png)
 
 ---
 
 #### Screenshot 5 — Secret references or describe output showing names and keys without sensitive values
 
-Add your screenshot here.
+![alt text](image-124.png)
 
 ---
 
@@ -94,13 +94,13 @@ Provide persistent MySQL storage and allow the backend to connect without exposi
 
 #### Screenshot 6 — Managed MySQL status or MySQL StatefulSet and PVC status
 
-Add your screenshot here.
+![alt text](image-125.png)
 
 ---
 
 #### Screenshot 7 — Successful database connectivity or schema verification with credentials hidden
 
-Add your screenshot here.
+![alt text](image-126.png)
 
 ---
 
@@ -114,7 +114,7 @@ Run one or two Node.js/Express backend replicas on port 3001 and expose them thr
 
 #### Screenshot 8 — Backend Deployment, ready Pods, and internal Service
 
-Add your screenshot here.
+![alt text](image-127.png)
 
 ---
 
@@ -122,7 +122,7 @@ Add your screenshot here.
 
 If the application does not log successful database connections, provide a successful database-backed request alongside the startup logs.
 
-Add your screenshot here.
+![alt text](image-128.png)
 
 ---
 
@@ -136,13 +136,13 @@ Run the Next.js frontend behind Nginx on port 80 and proxy API requests to the i
 
 #### Screenshot 10 — Frontend Deployment and Ready Pods
 
-Add your screenshot here.
+![alt text](image-129.png)
 
 ---
 
 #### Screenshot 11 — Nginx reverse-proxy configuration showing the internal backend Service name and port 3001
 
-Add your screenshot here.
+![alt text](image-131.png)
 
 ---
 
@@ -156,13 +156,14 @@ Expose the frontend and enforce the intended communication path between applicat
 
 #### Screenshot 12 — Frontend LoadBalancer or Ingress configuration and assigned endpoint, or documented local access method
 
-Add your screenshot here.
+![alt text](image-132.png)
 
 ---
 
 #### Screenshot 13 — Internal backend Service and NetworkPolicy or equivalent restriction, with access-test evidence
 
-Add your screenshot here.
+![alt text](image-133.png)
+![alt text](image-134.png)
 
 ---
 
@@ -176,25 +177,25 @@ Prove that the frontend, backend, and MySQL database work together and collect o
 
 #### Screenshot 14 — `kubectl get all` output for the book-review namespace
 
-Add your screenshot here.
+![alt text](image-135.png)
 
 ---
 
 #### Screenshot 15 — Functional Book Review App in the browser with the URL visible, including evidence of a successful user flow
 
-Add your screenshot here.
+![alt text](image-136.png)
 
 ---
 
 #### Screenshot 16 — Frontend or Nginx container logs
 
-Add your screenshot here.
+![alt text](image-137.png)
 
 ---
 
 #### Screenshot 17 — Backend logs and evidence of a successful database-backed operation
 
-Add your screenshot here.
+![alt text](image-138.png)
 
 ---
 
@@ -202,7 +203,7 @@ Add your screenshot here.
 
 Add your screenshot here, or write “Not attempted.”
 
-Multiple images may be included under a screenshot number when needed to demonstrate the complete user flow.
+Not attempted.
 
 ---
 
@@ -216,7 +217,7 @@ Add selected improvements without breaking the required three-tier architecture.
 
 #### Screenshot 19 — Optional: Evidence of selected Helm, HPA, probe, or TLS improvements
 
-Add your screenshot here, or write “Not attempted.”
+Not attempted
 
 ---
 
@@ -230,11 +231,11 @@ Explain your three-tier architecture, demonstrate the working application, and s
 
 #### Screenshot 20 — Published LinkedIn post about your Book Review App deployment on Kubernetes
 
-Add your screenshot here.
+![alt text](image-139.png)
 
 ### LinkedIn Post URL
 
-Add your published LinkedIn post URL here.
+https://lnkd.in/p/eTDbvhEF
 
 ---
 
@@ -244,31 +245,45 @@ Add your published LinkedIn post URL here.
 
 Describe the application components and user flows you successfully deployed and tested.
 
-Add your summary here.
+I deployed the Book Review app as a three-tier application on AWS EKS (cluster eks-lb-lab, eu-west-1, one t3.medium node) in the book-review namespace.
+
+Frontend: a Deployment whose Pod runs two containers, Next.js and Nginx. Nginx serves the app on port 80 and forwards /api requests to the backend, using a ConfigMap for its configuration. It is exposed publicly through a LoadBalancer Service, which created an AWS load balancer.
+Backend: a Node.js and Express API with 2 replicas behind an internal ClusterIP Service on port 3001. Its logs confirmed a successful database connection, schema creation, and sample users, books and reviews.
+Database: MySQL as a StatefulSet behind a headless internal Service, with a 5Gi EBS volume provisioned through the EBS CSI driver and a gp3 StorageClass. The database has no public address.
+Configuration: a ConfigMap holds the application settings, and a Secret holds the credentials, so no passwords are in the images or manifests.
+Access tests: the app loaded in the browser through the load balancer, /api/books returned data from MySQL through the public address, and the browser’s request showed the correct CORS headers.
+Network restrictions: NetworkPolicies allow only the frontend to reach the backend and only the backend to reach MySQL. A test Pod labelled as the frontend reached the backend with HTTP 200.
 
 ## Issues and Fixes
 
 Describe the main issues encountered, their causes, and how you resolved them.
 
-Add your summary here.
+Copy-paste damage in the guide’s commands. Missing $ signs, underscores and spaces turned variables into plain text, for example "CLUSTERNAME"--region"AWS_REGION". I replaced each broken command with a corrected one and checked variables with echo before using them.
+Empty $ROLE_ARN. The EBS add-on install failed with “Invalid length for parameter serviceAccountRoleArn”. The variable had never been set, so I read the role’s ARN from AWS with aws iam get-role and re-ran the command.
+STS timeout. eksctl create iamserviceaccount failed once with a DNS i/o timeout for the STS endpoint, which was a network problem on my side, and it worked when I retried.
+MySQL client “using password: NO”. The interactive -p prompt did not appear inside kubectl run -it, so an empty password was sent. I passed the password through the MYSQL_PWD environment variable, read from the Secret.
+Region mismatch. The guide used eu-north-1 in places, but the cluster was in eu-west-1, so I used the cluster’s real region everywhere.
+Login “Invalid email or password” (HTTP 400). The network request showed that the browser, load balancer, Nginx and backend were all working, and that CORS was correct. The error came from the app’s credential check, which meant the account I typed did not exist, so I registered a user or used the seeded accounts.
+Stuck PVC deletion. The PVC stayed in Terminating because the mysql-0 Pod still had it mounted. Deleting the StatefulSet released it, and the EBS volume was then deleted automatically.
 
 ## Tools and Sources Used
 
 List the documentation and tools that helped you complete the assignment.
 
-Add your tools and sources here.
+Tools: kubectl, eksctl, the AWS CLI, Docker and Docker Hub, curl, the MySQL client, the AWS Management Console (EC2, EKS), browser developer tools, and Git.
+Sources: the DMI assignment guide, the official Kubernetes documentation (Services, StatefulSets, PersistentVolumes, NetworkPolicy), the AWS documentation for the EKS Amazon EBS CSI driver add-on and IAM roles for service accounts, and Claude for explaining commands and troubleshooting.
 
 ## Optional Improvements
 
 Describe any optional improvements implemented, or write “Not attempted.”
 
-Add your summary here.
+Not attempted.
 
 ## Cleanup or Reuse Plan
 
 State which resources were removed or why the environment is being retained.
 
-Add your cleanup status or reuse plan here.
+The MySQL StatefulSet, PVC and its 5Gi EBS volume were deleted, which I verified in the EC2 console. After taking all my screenshots, I deleted the LoadBalancer Service first so that the AWS load balancer was removed, then deleted the whole cluster with eksctl delete cluster, which also removes the node group and its root disk. I then confirmed that no clusters, load balancers or volumes remained in eu-west-1.
 
 ---
 

@@ -144,45 +144,45 @@ Intentionally make the liveness probe fail and observe Kubernetes restart the un
 
 #### Screenshot 8 — `02-nginx-liveness-broken.yaml` showing `/does-not-exist`
 
-Add your screenshot here.
 
+![alt text](image-68.png)
 ---
 
 #### Screenshot 9 — Pod output showing an increased RESTARTS count
 
-Add your screenshot here.
 
+![alt text](image-69.png)
 ---
 
 #### Screenshot 10 — Pod description showing liveness-probe failure events or restart details
 
-Add your screenshot here.
 
+![alt text](image-70.png)
 ---
 
 #### Screenshot 11 — Output showing stable running Pods after applying the fixed configuration
 
-Add your screenshot here.
 
+![alt text](image-71.png)
 ---
 
 ### Notes
 
 **1. Why did the liveness probe fail?**
 
-Add your answer here.
+The probe was configured to check /does-not-exist on port 80, which NGINX doesn’t serve, so every check returned HTTP 404 and counted as a failure.
 
 **2. What happened after Kubernetes detected repeated liveness-probe failures?**
 
-Add your answer here.
+After three consecutive failures, the kubelet killed the container and restarted it, and because the probe kept failing, the Pod ended up in CrashLoopBackOff with increasing delays between restarts.
 
 **3. What does the RESTARTS column prove?**
 
-Add your answer here.
+It proves that Kubernetes automatically restarted the container each time the liveness probe failed, which is the self-healing behavior a liveness probe provides.
 
 **4. How did you restore the Deployment to a stable state?**
 
-Add your answer here.
+i applied a fixed version of a working liveness yaml file 
 
 ---
 
@@ -194,13 +194,13 @@ Observe why overly aggressive or incorrectly configured liveness probes can crea
 
 Complete this section only if you attempt Task 5. Otherwise, mark it as “Not attempted.”
 
-**Task status:** Completed / Not attempted
+**Task status:** Completed 
 
 ### Evidence
 
 #### Optional Screenshot — Pod output showing the RESTARTS count increasing during the restart-loop observation
 
-Add your screenshot here if attempted.
+![alt text](image-72.png)
 
 No specific restart count or CrashLoopBackOff status is required.
 
@@ -210,15 +210,15 @@ No specific restart count or CrashLoopBackOff status is required.
 
 **1. What is a restart loop?**
 
-Add your answer here.
+A restart loop is when a container repeatedly starts, fails, and is restarted by Kubernetes, with growing delays between attempts (CrashLoopBackOff), so it never stays healthy.
 
 **2. Why can an aggressive liveness probe be harmful?**
 
-Add your answer here.
+A probe with a short delay, tight timeout or low failure threshold can mark a healthy but slow or busy container as failed, causing needless restarts that can turn a temporary slowdown into an outage.
 
 **3. Why should liveness checks be lightweight and carefully tuned?**
 
-Add your answer here.
+A heavy check (such as one that calls a database or an external service) adds load and can fail for reasons unrelated to the container itself, so it should be a cheap local check with sensible delay, timeout and threshold values that only trigger a restart when the container is truly stuck.
 
 ---
 
@@ -232,11 +232,11 @@ Share what you learned about Kubernetes liveness probes, container restarts, and
 
 #### Screenshot 12 — Published LinkedIn post
 
-Add your screenshot here.
+![alt text](image-73.png)
 
 #### Linkedin post URL
 
-Add URl here
+https://lnkd.in/p/ekQvHc7J
 
 ---
 
