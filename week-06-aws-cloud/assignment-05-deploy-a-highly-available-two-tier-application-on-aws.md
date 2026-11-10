@@ -226,27 +226,22 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 Summarize the VPC and subnets across the two Availability Zones.
 
-Write your answer here.
 
-Created a 10.0.0.0/16 VPC across two Availability Zones with four /24 subnets: two public subnets (10.0.1.0/24 and 10.0.2.0/24) for the web tier and two private subnets (10.0.11.0/24 and 10.0.12.0/24) for the database tier. An Internet Gateway provided public connectivity, while a NAT Gateway provided outbound internet access for the private subnets.
+
+I Created a 10.0.0.0/16 VPC across two Availability Zones with four /24 subnets: two public subnets (10.0.1.0/24 and 10.0.2.0/24) for the web tier and two private subnets (10.0.11.0/24 and 10.0.12.0/24) for the database tier. An Internet Gateway provided public connectivity, while a NAT Gateway provided outbound internet access for the private subnets.
 
 
 Summarize the ALB and Auto Scaling Group setup.
 
-Write your answer here.
 
 Configured an internet-facing Application Load Balancer across both public subnets and connected it to a Target Group for the web servers. The Auto Scaling Group uses a Launch Template, maintains a desired/minimum capacity of 2 instances with a maximum of 4, distributes instances across both Availability Zones, and uses ALB health checks to replace unhealthy instances automatically.
 
 Summarize the private Multi-AZ RDS setup.
 
-Write your answer here.
-
-
-Created a DB subnet group containing both private subnets and deployed a MySQL RDS instance using Multi-AZ for high availability. The database is not publicly accessible and is protected by ha-db-sg, which allows database traffic only from the web-tier security group on port 3306.
+I Created a DB subnet group containing both private subnets and deployed a MySQL RDS instance using Multi-AZ for high availability. The database is not publicly accessible and is protected by ha-db-sg, which allows database traffic only from the web-tier security group on port 3306.
 
 Summarize the results of both high-availability tests.
 
-Write your answer here.
 
 The HA tests demonstrated that the application could continue operating when a web-tier instance became unavailable, with the Auto Scaling Group replacing unhealthy instances and the ALB routing traffic to healthy targets. The second test confirmed database/application availability through the ALB, with WordPress successfully performing read/write operations against the private RDS database.
 ---
@@ -260,9 +255,6 @@ Publish a LinkedIn post about the high-availability build, including the ALB URL
 ## Evidence
 
 #### LinkedIn Post URL
-
-Paste your LinkedIn post URL here:
-
 
 https://lnkd.in/p/eRK7bQq5
 ---

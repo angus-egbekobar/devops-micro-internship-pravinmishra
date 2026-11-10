@@ -27,7 +27,7 @@ Confirm you are working in your own fork, then create a dedicated branch for thi
 
 #### Screenshot 1 — Output of git remote -v and git branch showing the new branch
 
-Add your screenshot here.
+![alt text](image-53.png)
 
 ---
 
@@ -35,7 +35,13 @@ Add your screenshot here.
 
 **1. Why create a dedicated branch instead of doing this work on main?**
 
-Add your answer here.
+A dedicated branch keeps my assignment work isolated from main, so main always stays clean, stable, and in sync with the upstream repository. This matters for several reasons:
+
+Protects main: If something goes wrong, such as a bad edit or a broken file, it only affects my feature branch. I can delete the branch and start over without damaging main.
+Makes pull requests possible: A pull request compares a feature branch against a base branch. If I committed straight to main, there would be nothing separate to propose for review, and my fork’s main would drift away from upstream’s main.
+Keeps syncing easy: I can keep pulling updates from upstream/main into my own main without merge conflicts from my assignment work.
+Allows parallel work: I can work on several tasks at once, each on its own branch, without them interfering with each other.
+Gives a clear history: The branch name (feature/ai-pr-ready) describes the purpose of the work, so reviewers can see exactly what changed and why, and the changes can be reviewed and reverted as one unit.
 
 ---
 
@@ -49,7 +55,7 @@ On your own fork of this repository (the one you've been submitting your DMI wor
 
 #### Screenshot 1 — Output of  `git status` showing the staged file on feature/ai-pr-ready
 
-Add your screenshot here.
+![alt text](image-54.png)
 
 ---
 
@@ -57,7 +63,7 @@ Add your screenshot here.
 
 **1. Why does this assignment use an obviously fake key instead of a real one?**
 
-Add your answer here.
+A real key committed to Git is a live credential that can be leaked and abused (history keeps it even after deletion), so a fake one lets me practice spotting and fixing hardcoded secrets with no security risk
 
 ---
 
@@ -71,13 +77,13 @@ Create a tracked, shareable pre-commit hook that blocks a commit containing secr
 
 #### Screenshot 2 — `hooks/pre-commit` open in VS Code showing the full script
 
-Add your screenshot here.
+![alt text](image-55.png)
 
 ---
 
 #### Screenshot 3 — Output of `git config core.hooksPath` confirming it points to `hooks`
 
-Add your screenshot here.
+![alt text](image-56.png)
 
 ---
 
@@ -85,13 +91,13 @@ Add your screenshot here.
 
 **1. Why is `hooks/pre-commit` tracked in the repo instead of living only in `.git/hooks/`?**
 
-Add your answer here.
+Git never version-controls .git/hooks/, so a hook kept only there isn’t shared on clone or push. Tracking it in hooks/ lets everyone get the same checks (installed by copying or symlinking it, or via core.hooksPath) and lets the script be reviewed and updated like any other code
 
 ---
 
 **2. Compare this to `PreToolUse` from Week 2 Assignment 6. What does each one intercept, and what do they have in common?**
 
-Add your answer here.
+The git pre-commit hook intercepts a git commit before it is created, while PreToolUse intercepts a tool call (like Bash or Edit) that Claude Code is about to run. Both are scripts that run before an action, inspect it, and can block it (non-zero exit) to enforce rules such as catching secrets automatically.
 
 ---
 
@@ -105,7 +111,7 @@ Attempt to commit the staged file from Task 1 and show the hook rejecting it.
 
 #### Screenshot 4 — Terminal showing `git commit` rejected with the hook's "BLOCKED" message naming the exact file
 
-Add your screenshot here.
+![alt text](image-57.png)
 
 ---
 
@@ -113,13 +119,13 @@ Add your screenshot here.
 
 **1. Which line in `hooks/pre-commit` matched your fake key, and why did it match?**
 
-Add your answer here.
+The grep -qE 'AKIA[0-9A-Z]{16}|-----BEGIN (RSA|OPENSSH|PRIVATE) KEY-----' line matched, because the staged diff contains AKIA followed by exactly 16 uppercase letters or digits (AKIA8CDEFGHIJKLMNOP7). That set blocked=1, so the hook printed the BLOCKED message and exited with 1.
 
 ---
 
 **2. Could this hook have caught a poorly-named variable that stores a secret without the `AKIA` prefix? What does that tell you about the limits of a fixed rule like this?**
 
-Add your answer here.
+No: it only matches the exact AKIA format and private key headers, so a secret under a name like token=abc123 passes straight through (as your first 19-character key did). A fixed pattern catches only the formats it was written for, so it needs to be paired with broader scanners (like gitleaks) and code review.
 
 ---
 
@@ -133,13 +139,13 @@ Create a manually invoked Claude Code skill that reads your staged changes and p
 
 #### Screenshot 5 — `SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no `Write`) and `disable-model-invocation: true`
 
-Add your screenshot here.
+![alt text](image-58.png)
 
 ---
 
 #### Screenshot 6 — `/pr-ready` output while the risky file is still staged, showing it flagged the secret and/or debug statement
 
-Add your screenshot here.
+![alt text](image-59.png)
 
 ---
 
@@ -147,13 +153,13 @@ Add your screenshot here.
 
 **1. Why does `/pr-ready` have `Bash` and `Read` but not `Write`?**
 
-Add your answer here.
+/pr-ready only needs to inspect the staged changes (git diff --cached, git status) and read files, so Bash and Read are enough. Leaving out Write means it can’t edit files, which enforces its “draft only, never modify anything” rule at the tool level instead of relying on the prompt alone.
 
 ---
 
 **2. The pre-commit hook and `/pr-ready` both looked at the same staged diff. Did they flag the same things? What did one catch that the other didn't?**
 
-Add your answer here.
+Both flagged the hardcoded AKIA... key, but the hook only does that one fixed-pattern check and blocks the commit. /pr-ready also caught things the hook can’t, like the debug echo printing the key and the missing notes or README, and it drafted the PR title and description. The hook enforces a hard rule automatically, while /pr-ready gives broader, judgment-based review for a human to act on.
 
 ---
 
@@ -167,13 +173,13 @@ Remove the secret and debug statement, then prove both gates now pass clean.
 
 #### Screenshot 7 — `git commit` succeeding after the fix (no BLOCKED message)
 
-Add your screenshot here.
+![alt text](image-60.png)
 
 ---
 
 #### Screenshot 8 — Second `/pr-ready` run showing a clean risk report and a drafted PR title + description
 
-Add your screenshot here.
+![alt text](image-61.png)
 
 ---
 
@@ -181,7 +187,7 @@ Add your screenshot here.
 
 **1. What exactly did you change to satisfy the pre-commit hook?**
 
-Add your answer here.
+i deleted the hardcoded value
 
 ---
 
@@ -197,13 +203,15 @@ Push your branch and open a real Pull Request, using `/pr-ready`'s drafted title
 
 #### Screenshot 9 — Your Pull Request showing the base repository is your own fork, plus the title and description, with the `/pr-ready` draft visible for comparison (paste it in the PR conversation or your notes below)
 
-Add your screenshot here.
+
+![alt text](image-63.png)
+![alt text](image-62.png)
 
 ---
 
 #### PR Link
 
-Add your PR URL here...
+https://github.com/angus-egbekobar/devops-micro-internship-interviews/pull/1
 
 ---
 
@@ -211,19 +219,19 @@ Add your PR URL here...
 
 **1. What, if anything, did you edit in the AI's drafted PR description before using it? Why?**
 
-Add your answer here.
+The draft described a script with a hardcoded key and a debug echo still in it, but I had already replaced the key with an environment variable and removed the echo, so I rewrote it to match the final code. I also added the pre-commit hook, which the draft didn’t mention, and dropped the README advice because I didn’t add a README.
 
 ---
 
 **2. If you had blindly copy-pasted the AI's draft without reading it, what could go wrong?**
 
-Add your answer here.
+The PR would claim the script still contains a hardcoded credential and is missing a README, which is false and would mislead reviewers about what the code does. It could also omit changes like the hook, so the description wouldn’t match the diff.
 
 ---
 
 **3. Why does this PR need to target your own fork instead of the shared upstream repository?**
 
-Add your answer here.
+This is practice work, and a PR to upstream would send it to Pravin’s public repo, where it would be reviewed by the maintainer and could clutter or affect the shared project. Targeting my own fork lets me practice the full PR workflow safely, with nothing visible to or affecting anyone else.
 
 ---
 
@@ -237,31 +245,31 @@ Explain this assignment's workflow using the same Gather → Analyze → Human A
 
 **1. Which step(s) represent Gather?**
 
-Add your answer here.
+Running git status, git diff --cached and cat scripts/notify.sh to see exactly what is staged, which is also what /pr-ready does first.
 
 ---
 
 **2. Which step(s) represent Analyze?**
 
-Add your answer here.
+/pr-ready reviewing the staged diff for secrets, debug echoes and missing notes, then drafting the PR title and description. The hook’s pattern check is also a (fixed-rule) analysis.
 
 ---
 
 **3. Which step is Human Act, and why must a human — not Claude — run `git commit`, `git push`, and open the PR?**
 
-Add your answer here.
+Human Act is fixing the script, then running git commit, git push and opening the PR after editing the AI’s draft. These actions change history and publish work to a shared remote, so a person who has read the diff must take responsibility for them. That is why /pr-ready has no Write tool and is told never to commit, push or open PRs.
 
 ---
 
 **4. Which step is Verify?**
 
-Add your answer here.
+The hook blocking the commit with BLOCKED: possible secret in scripts/notify.sh, git log showing no new commit, and checking that the PR’s diff and files match the description.
 
 ---
 
 **5. In one or two sentences: why do you need *both* the fixed-rule pre-commit hook and the AI skill? Isn't one enough?**
 
-Add your answer here.
+The hook automatically enforces a few exact rules every time (it caught the key, and missed the 19-character one), but it can’t judge anything outside its patterns. The AI skill catches broader issues like the debug echo and writes the PR draft, but it is advisory and can be skipped or wrong, so you need both.
 
 ---
 
@@ -275,7 +283,7 @@ Publish a LinkedIn post summarizing what you built and what you learned about co
 
 #### LinkedIn Post URL
 
-Add your LinkedIn post URL here...
+https://lnkd.in/p/e8EvVb-t
 
 ---
 
@@ -283,7 +291,15 @@ Add your LinkedIn post URL here...
 
 Add 3-5 bullet points on what you learned this week.
 
--
+-Fixed rules are precise but narrow. My hook caught AKIA plus 16 characters and nothing else. A 19-character fake key and a secret stored as token=abc123 would both pass.
+
+🔹 AI review is broad but advisory. /pr-ready spotted the debug echo and the missing notes, but it can’t stop a commit, and it can be wrong or skipped.
+
+🔹 Read AI drafts critically. The PR description it wrote was out of date once I fixed the code. Always check a draft against the actual diff before using it.
+
+🔹 Least privilege applies to AI tools too. Giving /pr-ready only Bash and Read (no Write) enforces “draft only” at the tool level instead of relying on the prompt.
+
+🔹 Track your hooks in the repo. .git/hooks/ isn’t version-controlled, so a tracked hooks/ folder with core.hooksPath lets everyone share and review the same checks.
 -
 -
 
@@ -305,7 +321,7 @@ Add 3-5 bullet points on what you learned this week.
 
 Paste your forked repository URL here:
 
-`Add your URL here`
+https://github.com/angus-egbekobar/devops-micro-internship-interviews
 
 ---
 

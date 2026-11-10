@@ -8,7 +8,7 @@ Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 **Full Name:** Angus Egbekobar
 **Cloud Platform:** AWS
-**GitHub Repository URL:** Add your repository URL here  
+**GitHub Repository URL:** https://github.com/angus-egbekobar
 **Public Application URL / Load-Balancer DNS:** Add the public URL or DNS here
 
 ---

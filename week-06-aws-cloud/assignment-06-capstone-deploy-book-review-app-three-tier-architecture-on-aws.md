@@ -20,7 +20,7 @@ Create an architecture diagram showing the custom VPC (10.0.0.0/16), the six sub
 
 #### Diagram image or link
 
-Add your diagram image or link here.
+
 ![alt text](image-63.png)
 ---
 
@@ -39,8 +39,6 @@ Europe(Stockholm)
 ---
 
 **Services:**
-
-Write your answer here.
 
  Networking
 
@@ -92,7 +90,6 @@ Confirm the Book Review App loads through the public ALB DNS name.
 
 #### Public ALB DNS
 
-Paste your public ALB DNS name here:
 
 
 Book-Review-Web-ALB-83986049.eu-north-1.elb.amazonaws.com
@@ -152,7 +149,7 @@ Summarize what worked in the final deployment, the issues encountered and how ea
 
 **What worked:**
 
-Write your answer here.
+
 
 The final deployment is a fully isolated three-tier architecture inside a custom VPC (10.0.0.0/16) across two Availability Zones, with six subnets (two public, four private):
 
@@ -172,8 +169,6 @@ End-to-end functionality is confirmed working: the homepage loads and lists book
 ---
 
 **Issues + fixes:**
-
-Write your answer here.
 
 Issue: SSH key permission error in WSL. The .pem key lived under /mnt/c/... (the Windows-mounted drive), where chmod cannot enforce Linux file permissions, so SSH refused to use it. 
 
@@ -224,7 +219,6 @@ Fix: added the site's actual origin to ALLOWED_ORIGINS and restarted PM2 with --
 
 **Tools/sources used:**
 
-Write your answer here.
 
 AWS Management Console — EC2 instances, Security Groups, Target Groups, Load Balancers, and RDS, for configuration and health-check verification.
 
@@ -255,7 +249,7 @@ Publish a LinkedIn post sharing the capstone deployment, including the public AL
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
+
 
 
 https://lnkd.in/p/etNfPE5B
